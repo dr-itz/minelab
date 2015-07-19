@@ -133,7 +133,7 @@ select {
   @include row;
   background: $dark-blue;
   color: white;
-  padding: 0 1em;
+  padding: 0;
   cursor: default;
   position: relative;
   z-index: 999;
@@ -534,7 +534,7 @@ select {
 
 #top-menu .outer-container,
 #header .outer-container {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 #main {
