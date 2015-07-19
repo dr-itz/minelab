@@ -167,9 +167,6 @@ select {
       }
     }
   }
-  ul {
-    @include animation(fadeIn 1s);
-  }
   li {
     float: left;
     list-style-type: none;
@@ -301,13 +298,11 @@ select {
     margin-right: 1em;
     color: $grey-blue;
     font-size: 0.9em;
-    @include animation(fadeIn 1s);
     a {
       font-size: 1em;
     }
   }
   #account {
-    @include animation(fadeIn 1s);
     &.cms {
       ul li {
         height: auto !important;
@@ -340,7 +335,6 @@ select {
     position: relative;
     padding-left: 3.8em;
     z-index: 0;
-    @include animation(fadeIn 1s);
   }
   .home {
     display: block;
@@ -365,7 +359,6 @@ select {
     position: relative;
     top: 0.65em;
     z-index: 5;
-    @include animation(fadeIn 1s);
     .icon-search {
       &:before {
         z-index: 5;
@@ -419,9 +412,6 @@ select {
   background: $light-grey;
   cursor: default;
   box-shadow: inset 0 -1px 0 $medium-grey;
-  ul {
-    @include animation(fadeIn 1s);
-  }
   li {
     display: table-cell;
     width: 1%;
@@ -541,7 +531,6 @@ select {
   @include outer-container;
   padding: 0 20px 6em;
   position: relative;
-  @include animation(fadeIn 1s);
   &.nosidebar {
     #content {
       @include span-columns(12);
