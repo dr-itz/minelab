@@ -1,16 +1,3 @@
-# system files
-.DS_Store
-thumbs.db
-__MACOSX
-._*
-
-# vim swap files
-*.swp
-*.swo
-
-# PHPStorm project files
-/.idea/
-
 # sass
 .sass-cache
 
