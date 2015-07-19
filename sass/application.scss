@@ -979,8 +979,8 @@ table p {
   margin: 0;
 }
 
-.even, tr:nth-child(2n+2) {
-  background-color: $white !important;
+.even {
+  background-color: $light-grey;
 }
 
 a.sort {
@@ -3156,7 +3156,7 @@ tr.group:hover a.toggle-all, form, .check_box_group.bool_cf label, .syntaxhl div
   display: inline;
 }
 
-.even, #content .tabs ul li a.selected:hover {
+#content .tabs ul li a.selected:hover {
   background-color: white;
 }
 
