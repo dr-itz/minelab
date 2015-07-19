@@ -23,11 +23,5 @@ jQuery(document).ready(function($){
 		$('#quick-search select').select2({
 			width: 'element'
 		});
-
-		$('#account:not(.cms) a').each(function() {
-			$(this).attr('title', $(this).text()).text('');
-		});
-
-		$('#account:not(.cms) .my-page').parent().detach().prependTo('#account ul:first');
 	});
 });
