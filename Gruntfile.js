@@ -28,13 +28,32 @@ module.exports = function(grunt) {
                 files: ['sass/**/*.scss'],
                 tasks: ['compile-css']
             }
-        }
+        },
+		compress: {
+			main: {
+				options: {
+					archive: 'minelab.tar.gz',
+					pretty: true,
+				},
+				expand: true,
+				src: [
+					'fonts/**',
+					'images/**',
+					'javascripts/**',
+					'stylesheets/**',
+					'README.md'
+				],
+				dest: '/minelab'
+			}
+		}
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-compress');
 
     grunt.registerTask('default', ['compile-css']);
     grunt.registerTask('compile-css', ['sass', 'cssmin']);
+    grunt.registerTask('dist', ['compile-css', 'compress']);
 };

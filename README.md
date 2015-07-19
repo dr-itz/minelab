@@ -35,7 +35,7 @@ $ brew install node
 
 Then, install dependencies
 
-  * Grunt (if not already availabe)
+  * Grunt (if not already available)
 
 	~~~~
 	$ npm install -g grunt-cli
@@ -73,6 +73,12 @@ Finally, build with:
 
 ~~~~
 $ grunt
+~~~~
+
+To create a distribution minelab.tar.gz:
+
+~~~~
+$ grunt dist
 ~~~~
 
 ## Credits

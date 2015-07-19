@@ -7,3 +7,6 @@
 # sass libraries
 /sass/bourbon/
 /sass/neat/
+
+# generated CSS
+/stylesheets/
