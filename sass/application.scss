@@ -341,11 +341,9 @@ select {
     width: 3em;
     height: 100%;
     border-right: 1px solid darken($blue, 7%);
-    border-left: 1px solid darken($blue, 7%);
-    box-shadow: inset -1px 0 0 rgba(white, 0.15), -1px 0 0 rgba(white, 0.15);
     position: absolute;
     top: 0;
-    left: 1px;
+    left: 0;
     padding: 0.2em;
     text-align: center;
     &:before {
