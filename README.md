@@ -23,6 +23,58 @@ Make it responsive!
 
 Screenshots are available at [Minlab's page](http://hardpixel.github.io/minelab/)
 
+
+## Development setup
+
+If not done, install node.js. Instructions for a Mac with Homebrew installed
+follow. For other platforms, see the Node.js install guide:
+
+~~~~
+$ brew install node
+~~~~
+
+Then, install dependencies
+
+  * Grunt (if not already availabe)
+
+	~~~~
+	$ npm install -g grunt-cli
+	~~~~
+
+  * Grunt dependencies for this project
+
+	~~~~
+	$ npm install
+	~~~~
+
+  * SASS
+
+	~~~~
+	$ gem install sass
+	~~~~
+
+  * Bourbon
+
+	~~~~
+	$ gem install bourbon
+	$ bourbon install --path=sass/
+	~~~~
+
+  * NEAT
+
+	~~~~
+	$ gem install neat
+	$ cd sass
+	$ neat install
+	$ cd ..
+	~~~~
+
+Finally, build with:
+
+~~~~
+$ grunt
+~~~~
+
 ## Credits
 
 [Bourbon](http://bourbon.io/) | [Neat](http://neat.bourbon.io/) | [Font Awesome](http://fontawesome.io/) | [PACE](http://github.hubspot.com/pace/)
