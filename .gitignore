@@ -8,5 +8,6 @@
 /sass/bourbon/
 /sass/neat/
 
-# generated CSS
+# generated CSS and tar.gz
 /stylesheets/
+/minelab.tar.gz
