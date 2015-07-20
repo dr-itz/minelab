@@ -426,6 +426,7 @@ select {
       &:hover {
         color: $medium-dark-blue;
         border-bottom: 3px solid $medium-dark-blue;
+        transition-duration: 0s;
       }
       &.selected, &.selected:hover {
         color: $blue;
