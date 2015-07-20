@@ -47,12 +47,6 @@ Then, install dependencies
 	$ npm install
 	~~~~
 
-  * SASS
-
-	~~~~
-	$ gem install sass
-	~~~~
-
   * Bourbon
 
 	~~~~

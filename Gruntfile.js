@@ -1,16 +1,20 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        sass: {
-            expanded: {
-                options: {
-                    style:'expanded'
-                },
-                files: {
-                    'stylesheets/application.css': ['sass/application.scss']
-                }
-            }
-        },
+		sass: {
+			options: {
+				sourceMap: true,
+				precision: 5,
+				outputStyle: 'expanded',
+				noCache: false,
+				spawn: false
+			},
+			dist: {
+				files: {
+					'stylesheets/application.css': 'sass/application.scss'
+				}
+			}
+		},
         cssmin: {
             minify: {
                 files:[{
@@ -26,7 +30,7 @@ module.exports = function(grunt) {
         watch: {
             styles: {
                 files: ['sass/**/*.scss'],
-                tasks: ['compile-css']
+                tasks: ['sass']
             }
         },
 		compress: {
@@ -48,7 +52,7 @@ module.exports = function(grunt) {
 		}
     });
 
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-compress');
