@@ -180,8 +180,8 @@ select {
   a {
     color: $grey-blue;
     font-size: 0.9em;
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
     @include transition-duration(0.3s);
     display: inline-block;
     &:hover, &:focus, &:active {
@@ -190,7 +190,6 @@ select {
     &:before {
       @extend .fa;
       margin-right: 0.5em;
-      vertical-align: middle;
     }
     &.my-page {
       @extend .fa-dashboard;
