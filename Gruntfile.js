@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 		compress: {
 			main: {
 				options: {
-					archive: 'minelab.tar.gz',
+					archive: 'minelab-ritz.tar.gz',
 					pretty: true,
 				},
 				expand: true,
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
 					'stylesheets/**',
 					'README.md'
 				],
-				dest: '/minelab'
+				dest: '/minelab-ritz'
 			}
 		}
     });
