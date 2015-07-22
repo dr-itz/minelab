@@ -1352,11 +1352,17 @@ fieldset#filters td.add-filter {
   vertical-align: top;
 }
 
+table#filters-table {
+  td.values span {
+    vertical-align: middle;
+  }
+}
+
 .toggle-multiselect {
-  background: url(../images/bullet_toggle_plus.png) no-repeat 0 40%;
-  padding-left: 8px;
-  margin-left: 0;
+  margin-left: 3px;
   cursor: pointer;
+  @extend .fa;
+  @extend .fa-plus-square;
 }
 
 .buttons {
