@@ -1318,38 +1318,40 @@ fieldset#date-range p {
   margin: 2px 0;
 }
 
-fieldset#filters table {
-  border-collapse: collapse;
-}
+fieldset#filters  {
+  table {
+    border-collapse: collapse;
+  }
 
-fieldset#filters table td {
-  vertical-align: middle;
-  padding: 0;
-}
+  tr.filter {
+    height: 2.1em;
+  }
 
-fieldset#filters tr.filter {
-  height: 2.1em;
-}
+  td {
+    vertical-align: middle;
+    padding: 0;
 
-fieldset#filters td.field {
-  width: 230px;
-}
+    &.field {
+      width: 230px;
+    }
+    &.operator {
+      width: 180px;
+    }
+    &.operator select {
+      max-width: 170px;
+    }
+    &.values {
+      white-space: nowrap;
 
-fieldset#filters td.operator {
-  width: 180px;
-}
-
-fieldset#filters td.operator select {
-  max-width: 170px;
-}
-
-fieldset#filters td.values select {
-  min-width: 130px;
-}
-
-fieldset#filters td.add-filter {
-  text-align: right;
-  vertical-align: top;
+      select {
+        min-width: 130px;
+      }
+    }
+    &.add-filter {
+      text-align: right;
+      vertical-align: top;
+    }
+  }
 }
 
 table#filters-table {
@@ -3063,7 +3065,7 @@ table.list td.checkbox input, #relations td.buttons {
   padding: 0;
 }
 
-tr.project td.name a, tr.issue td.relations span, tr.entry td, tr.message td.created_on, fieldset#filters td.values {
+tr.project td.name a, tr.issue td.relations span, tr.entry td, tr.message td.created_on {
   white-space: nowrap;
 }
 
@@ -3214,7 +3216,7 @@ div#search-results-counts ul {
   margin-top: 0.5em;
 }
 
-fieldset#filters td.values input, table.progress td {
+table.progress td {
   height: 1em;
 }
 
