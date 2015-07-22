@@ -1301,17 +1301,20 @@ div.issue table.attributes td {
   width: 28%;
 }
 
-fieldset.collapsible > legend {
-  @extend .fa-caret-down;
-  cursor: pointer;
-  &:before {
-    @extend .fa;
-    margin-right: 0.5em;
-  }
-}
+fieldset.collapsible {
+  > legend {
+    @extend .fa-caret-down;
+    cursor: pointer;
 
-fieldset.collapsible.collapsed > legend {
-  @extend .fa-caret-right;
+    &:before {
+      @extend .fa;
+      margin-right: 0.5em;
+    }
+  }
+
+  &.collapsed > legend {
+    @extend .fa-caret-right;
+  }
 }
 
 fieldset#date-range p {
