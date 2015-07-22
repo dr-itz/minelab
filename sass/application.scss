@@ -2161,6 +2161,7 @@ p.progress-info {
         padding: 1em;
         color: $grey;
         font-size: 0.9em;
+        transition-duration: 0s;
         &:hover {
           background-color: $light-grey;
           text-decoration: none;
