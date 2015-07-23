@@ -744,7 +744,7 @@ table {
       vertical-align: top;
       padding: 0.3em;
       border-bottom: 1px solid $light-grey;
-      text-align: left !important;
+      text-align: left;
       &.name {
         font-weight: 600;
       }
