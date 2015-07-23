@@ -3195,7 +3195,7 @@ div.journal {
   float: left;
   width: 100%;
   border: 1px solid #ccc;
-  padding: 5px 10px;
+  padding: 0;
   border-radius: 4px;
   background: #F9F9F9;
   position: relative;
@@ -3205,14 +3205,17 @@ div.journal {
   }
 
   h4 {
-    padding: 0 0 6px;
-    margin: 4px 0 0;
+    padding: 8px 10px;
+    border: none;
+    margin: 0;
+    background: #eee;
   }
 
   ul.details {
     list-style-type: none;
-    padding: 0 0 5px;
-    margin: 5px 0 0px;
+    padding: 6px 10px;
+    margin: 0;
+    border-top: 1px solid #ccc;
     color: $grey;
     img {
       margin: 0 0 -3px 4px;
@@ -3222,8 +3225,8 @@ div.journal {
   &.has-notes .wiki {
     background: #fff;
     padding: 10px;
-    margin: -1px -10px -5px;
-    border-top: 1px solid #eee;
+    margin: 0;
+    border-top: 1px solid #ccc;
 
     p {
       margin: 0;
