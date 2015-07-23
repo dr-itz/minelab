@@ -495,25 +495,25 @@ select {
       @extend .fa-sitemap;
     }
   }
-  a.projects, dt.project, .icon-projects {
+  a.projects {
     @extend .fa-cubes;
   }
-  a.users, .icon-user {
+  a.users {
     @extend .fa-user;
   }
-  a.trackers, dt.issue, .icon-issue {
+  a.trackers {
     @extend .fa-square;
   }
-  a.issue_statuses, dt.issue-edit {
+  a.issue_statuses {
     @extend .fa-pencil-square;
   }
-  a.settings, dt.changeset {
+  a.settings {
     @extend .fa-gears;
   }
-  a.info, .icon-help {
+  a.info {
     @extend .fa-info-circle;
   }
-  a.server_authentication, .icon-server-authentication {
+  a.server_authentication {
     @extend .fa-key;
   }
 }
@@ -3386,19 +3386,57 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
 }
 
 .icon-phone {
+  @extend .fa;
   @extend .fa-phone;
 }
 
 .icon-email {
+  @extend .fa;
   @extend .fa-envelope;
 }
 
 .icon-linkedin {
+  @extend .fa;
   @extend .fa-linkedin;
 }
 
 .icon-merge {
+  @extend .fa;
   @extend .fa-level-up;
+}
+
+dt.project, .icon-projects {
+  @extend .fa;
+  @extend .fa-cubes;
+}
+
+.icon-user {
+  @extend .fa;
+  @extend .fa-user;
+}
+
+dt.issue, .icon-issue {
+  @extend .fa;
+  @extend .fa-square;
+}
+
+dt.issue-edit {
+  @extend .fa;
+  @extend .fa-pencil-square;
+}
+
+dt.changeset {
+  @extend .fa;
+  @extend .fa-gears;
+}
+
+.icon-help {
+  @extend .fa;
+  @extend .fa-info-circle;
+}
+
+.icon-server-authentication {
+  @extend .fa-key;
 }
 
 .controller-people.action-show, .controller-contacts.action-show {
