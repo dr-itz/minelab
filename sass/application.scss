@@ -1403,17 +1403,6 @@ div#issue-changesets p {
   margin-bottom: 1em;
 }
 
-.journal {
-  ul.details {
-    list-style-type: none;
-    padding-left: 0;
-    color: $grey;
-    img {
-      margin: 0 0 -3px 4px;
-    }
-  }
-}
-
 div#activity dl, #search-results {
   margin-left: 0;
 }
@@ -3199,6 +3188,32 @@ div.journal {
 
   &.private-notes {
     border-color: #186797;
+  }
+
+  h4 {
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  ul.details {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0px;
+    color: $grey;
+    img {
+      margin: 0 0 -3px 4px;
+    }
+  }
+
+  &.has-notes .wiki {
+    background: #fff;
+    padding: 10px;
+    margin: 0px -10px;
+    border-top: 1px solid #eee;
+
+    p {
+      margin: 0;
+    }
   }
 }
 
