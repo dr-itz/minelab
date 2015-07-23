@@ -525,7 +525,7 @@ select {
 
 #main {
   @include outer-container;
-  padding: 0 20px 6em;
+  padding: 0 20px 0;
   &.nosidebar {
     #content {
       @include span-columns(12);
