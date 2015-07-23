@@ -1236,14 +1236,14 @@ div.issue {
   background: $white !important;
   margin-bottom: 1em;
   border: 1px solid $medium-grey;
-  padding: 2em;
+  padding: 10px;
   border-radius: 4px;
   div.subject {
-    padding-left: 4.5em;
+    padding-left: 0;
   }
   .author {
     margin: 0.3em 0 0;
-    padding-left: 4.5em;
+    padding-left: 0;
   }
   .attributes {
     margin-top: 2em;
@@ -1412,10 +1412,6 @@ div#issue-changesets p {
       margin: 0 0 -3px 4px;
     }
   }
-}
-
-div.journal.private-notes {
-  border-color: #186797;
 }
 
 div#activity dl, #search-results {
@@ -2670,14 +2666,14 @@ img.gravatar {
 
 div.issue img.gravatar {
   float: left;
-  margin: 0;
+  margin: 0 10px 0 0;
 }
 
 div.issue table img.gravatar {
   height: 1em;
   width: 1em;
   float: left;
-  margin: 0 0.5em 0 0;
+  margin: 0 5px 0 0;
 }
 
 h2 img.gravatar {
@@ -3196,10 +3192,14 @@ div.journal {
   float: left;
   width: 100%;
   border: 1px solid #ccc;
-  padding: 5px 10px 30px;
+  padding: 0 10px;
   border-radius: 4px;
   background: #F9F9F9;
   position: relative;
+
+  &.private-notes {
+    border-color: #186797;
+  }
 }
 
 #main #content div.journal .contextual {
