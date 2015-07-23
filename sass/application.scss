@@ -599,10 +599,11 @@ select {
   #content {
     @include span-columns(10);
     margin-right: 0;
+    padding-top: 12px;
     z-index: 10;
     .contextual {
       float: right;
-      top: 1.6em;
+      margin-top: 5px;
       position: relative;
       + .breadcrumb {
         position: relative;
@@ -618,7 +619,7 @@ select {
       font-weight: 400;
       border-bottom: 1px solid $medium-grey;
       margin: 0 0 0.8em;
-      padding: 0.7em 0 0.2em;
+      padding: 0 0 0.2em;
       .live_search {
         margin-left: 1em;
       }
