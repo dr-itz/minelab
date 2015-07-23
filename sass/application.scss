@@ -617,8 +617,8 @@ select {
     h2:first-of-type {
       font-weight: 400;
       border-bottom: 1px solid $medium-grey;
-      margin: 0 0 1.2em;
-      padding: 0.7em 0;
+      margin: 0 0 0.8em;
+      padding: 0.7em 0 0.2em;
       .live_search {
         margin-left: 1em;
       }
@@ -1147,7 +1147,7 @@ span.search_for_watchers a, span.add_attachment a {
   background: $white;
   border: 1px solid $medium-grey;
   border-radius: 4px;
-  margin: 1em 0;
+  margin: 0 0 1em;
 }
 
 div.square {
