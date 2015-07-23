@@ -2359,6 +2359,13 @@ a.close-icon:hover {
   color: $red;
 }
 
+.controller-gantts.action-show {
+  table td {
+    padding: 2px;
+    box-sizing: content-box;
+  }
+}
+
 .gantt_hdr {
   position: absolute;
   top: 0;
@@ -3492,12 +3499,6 @@ div.agile-board.autoscroll {
 div.issue.invoice {
   div.subject, .author {
     padding-left: 0 !important;
-  }
-}
-
-.controller-gantts.action-show {
-  table td {
-    padding: 0;
   }
 }
 
