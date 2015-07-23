@@ -3563,3 +3563,8 @@ p, div, span {
 .ui-autocomplete {
   z-index: 1000;
 }
+
+a#stealth_toggle {
+  @extend .fa;
+  @extend .fa-eye-slash;
+}
