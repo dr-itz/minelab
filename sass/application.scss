@@ -67,7 +67,7 @@ a {
 }
 
 #{$all-text-inputs}, #{$all-text-inputs-hover}, textarea, textarea:hover, select, select:hover {
-  padding: 0.5em;
+  padding: 0.3em;
   border-radius: 4px;
   border: 1px solid $medium-grey;
   @include transition-duration(0.3s);
@@ -1629,7 +1629,7 @@ p.pagination {
     clear: left;
     margin: 0;
     padding-left: 15em;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
     &.live_search {
       font-size: 1em;
       &:before {
