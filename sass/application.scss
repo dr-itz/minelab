@@ -1159,14 +1159,9 @@ div.square {
   margin: 0.3em 0.4em 0;
 }
 
-.splitcontentleft,.splitcontentright {
-  ul {
-    padding-left: 0;
-    list-style-type: none;
-    li {
-      padding: 0.3em 0;
-    }
-  }
+ul {
+  padding-left: 2em;
+  margin: 0 10px;
 }
 
 .splitcontentleft {
