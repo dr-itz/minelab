@@ -1310,13 +1310,25 @@ fieldset.collapsible {
     }
   }
 
-  &.collapsed > legend {
-    @extend .fa-caret-right;
+  &.collapsed {
+    padding-top: 1em;
+    > legend {
+      @extend .fa-caret-right;
+    }
   }
 }
 
 fieldset#date-range p {
   margin: 2px 0;
+}
+
+div#query_form_with_buttons {
+  padding: 10px;
+  margin-bottom: 1em;
+
+  .buttons {
+    margin-bottom: 0;
+  }
 }
 
 fieldset#filters  {
