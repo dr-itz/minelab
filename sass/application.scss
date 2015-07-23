@@ -1676,13 +1676,13 @@ p.pagination {
       width: auto;
     }
   }
-  .settings {
+  &.settings {
     p {
-      padding-left: 20em;
+      padding-left: 23em;
     }
     label {
-      margin-left: -20em;
-      width: 19.5em;
+      margin-left: -23em;
+      width: 22.5em;
     }
   }
 }
