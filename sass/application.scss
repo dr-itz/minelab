@@ -1166,10 +1166,12 @@ ul {
 
 .splitcontentleft {
   @include span-columns(6);
+  float: left;
 }
 
 .splitcontentright {
   @include span-columns(6);
+  float: right;
   margin-right: 0 !important;
 }
 
@@ -3553,11 +3555,6 @@ p, div, span {
     border-radius: 4px;
     border: 1px solid rgba(255,0,0,.1);
   }
-}
-
-#issue-form .attributes .splitcontent {
-  .splitcontentleft {float: left;}
-  .splitcontentright {float: right;}
 }
 
 .ui-autocomplete {
