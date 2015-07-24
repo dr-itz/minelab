@@ -104,7 +104,7 @@ select {
   vertical-align: middle;
   text-align: center;
   font-size: 1em;
-  height: 35px;
+  height: 34px;
   + a {
     font-size: 1em;
     @extend .button;
@@ -1033,7 +1033,8 @@ table.query-columns td.buttons {
 }
 
 table.query-columns td.buttons input[type=button] {
-  width: 35px;
+  width: 34px;
+  padding: 0;
 }
 
 h3.version {
