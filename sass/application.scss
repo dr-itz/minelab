@@ -618,12 +618,19 @@ select {
       a:before {
         margin-left: 1em;
       }
+      input, select {
+        margin-top: -4px;
+      }
+      input[type="submit"] {
+        padding: 0 5px;
+        height: 2em;
+      }
     }
     h2:first-of-type {
       font-weight: 400;
       border-bottom: 1px solid $medium-grey;
       margin: 0 0 0.8em;
-      padding: 0 0 0.2em;
+      padding: 0 0 6px;
       .live_search {
         margin-left: 1em;
       }
@@ -3171,7 +3178,10 @@ tr.message td.subject, tr.version td.name, fieldset#notified_events .parent {
   padding-left: 20px;
 }
 
-td.hours .hours-dec, .contextual input, .contextual select, table#time-report .hours-dec {
+td.hours .hours-dec,
+.contextual input, .contextual input:hover,
+.contextual select, .contextual select:hover,
+ table#time-report .hours-dec {
   font-size: 0.9em;
 }
 
