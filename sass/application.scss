@@ -444,8 +444,10 @@ select {
   a {
     background-image: none !important;
     margin-bottom: 0.2em;
+    padding: 0.5em 0.5em 0.5em 2.5em !important;
     &:before {
       @extend .fa;
+      margin-left: -2em;
       margin-right: 0.5em;
       width: 1.5em;
       text-align: center;
