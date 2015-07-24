@@ -442,9 +442,11 @@ select {
     padding: 0;
   }
   a {
-    background-image: none !important;
+    background-repeat: no-repeat;
+    background-position: 0.5em;
     margin-bottom: 0.2em;
     padding: 0.5em 0.5em 0.5em 2.5em !important;
+    color: $grey;
     &:before {
       @extend .fa;
       margin-left: -2em;
@@ -574,7 +576,7 @@ select {
         }
       }
     }
-    ul a, a[href$="agile/board"], a[href$="agile_versions"] {
+    ul li, a[href$="agile/board"], a[href$="agile_versions"] {
       display: inline-block;
       width: 100%;
       border-radius: 4px;
@@ -659,19 +661,13 @@ select {
 #admin-index {
   #admin-menu {
     li {
+      border-radius: 4px;
       a {
         display: inline-block;
         width: 100%;
-        border-radius: 4px;
-        padding: 0.5em;
-        color: $grey;
-        &:hover {
-          background: $light-grey;
-        }
-        &.selected {
-          background: $blue;
-          color: white;
-        }
+      }
+      &:hover {
+        background: $light-grey;
       }
     }
   }
