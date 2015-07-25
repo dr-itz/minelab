@@ -618,6 +618,9 @@ select {
       a:before {
         margin-left: 1em;
       }
+    }
+    > .contextual {
+      margin-bottom: 5px;
       input, select {
         margin-top: -4px;
       }
@@ -2323,6 +2326,8 @@ div.wiki {
 
     &.right {
       float: right;
+      clear: right;
+      margin-top: 8px;
       margin-left: 12px;
       margin-right: 0;
       width: auto;
