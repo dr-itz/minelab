@@ -2280,82 +2280,90 @@ button.tab-right {
   padding: 1em;
 }
 
-div.wiki table {
-  border-collapse: collapse;
-  margin-bottom: 1em;
-}
+div.wiki {
+  table {
+    border-collapse: collapse;
+    margin-bottom: 1em;
+  }
+  table, td, th {
+    border: 1px solid #bbbbbb;
+    padding: 4px;
+  }
 
-div.wiki table, div.wiki td, div.wiki th {
-  border: 1px solid #bbbbbb;
-  padding: 4px;
-}
+  .external {
+    background-position: 0 60%;
+    background-repeat: no-repeat;
+    padding-left: 12px;
+    background-image: url(../images/external.png);
+  }
 
-div.wiki .external {
-  background-position: 0 60%;
-  background-repeat: no-repeat;
-  padding-left: 12px;
-  background-image: url(../images/external.png);
-}
+  a.new {
+    color: #b73535;
+  }
 
-div.wiki a.new {
-  color: #b73535;
-}
+  pre {
+    background-color: #fdfdfd;
+    border: 1px solid #e2e2e2;
+    width: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 1em 1em 1em 1.6em;
+    padding: 8px;
+  }
 
-div.wiki pre {
-  background-color: #fdfdfd;
-  border: 1px solid #e2e2e2;
-  width: auto;
-  overflow-x: auto;
-  overflow-y: hidden;
-  margin: 1em 1em 1em 1.6em;
-  padding: 8px;
-}
+  ul.toc {
+    background-color: #ffffdd;
+    border: 1px solid #e4e4e4;
+    line-height: 1.2em;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    margin-left: 0;
+    display: table;
+    padding: 4px;
 
-div.wiki ul.toc {
-  background-color: #ffffdd;
-  border: 1px solid #e4e4e4;
-  line-height: 1.2em;
-  margin-bottom: 12px;
-  margin-right: 12px;
-  margin-left: 0;
-  display: table;
-  padding: 4px;
+    &.right {
+      float: right;
+      margin-left: 12px;
+      margin-right: 0;
+      width: auto;
+    }
+    &.left {
+      float: left;
+      margin-right: 12px;
+      margin-left: 0;
+      width: auto;
+    }
+    li {
+      list-style-type: none;
+      font-size: 12px;
+      margin: 0;
+
+      li {
+        margin-left: 1.5em;
+        font-size: 10px;
+      }
+    }
+    a {
+      font-size: 0.9em;
+      font-weight: 400;
+      text-decoration: none;
+      color: #606060;
+
+      &:hover {
+        color: #c61a1a;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  img {
+    vertical-align: middle;
+    max-width: 100%;
+  }
 }
 
 * html div.wiki ul.toc {
   width: 50%;
-}
-
-div.wiki ul.toc.right {
-  float: right;
-  margin-left: 12px;
-  margin-right: 0;
-  width: auto;
-}
-
-div.wiki ul.toc.left {
-  float: left;
-  margin-right: 12px;
-  margin-left: 0;
-  width: auto;
-}
-
-div.wiki ul.toc li {
-  list-style-type: none;
-  font-size: 12px;
-  margin: 0;
-}
-
-div.wiki ul.toc li li {
-  margin-left: 1.5em;
-  font-size: 10px;
-}
-
-div.wiki ul.toc a {
-  font-size: 0.9em;
-  font-weight: 400;
-  text-decoration: none;
-  color: #606060;
 }
 
 a.wiki-anchor {
@@ -2372,11 +2380,6 @@ a.wiki-anchor:hover {
 h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor {
   display: inline;
   color: #dddddd;
-}
-
-div.wiki img {
-  vertical-align: middle;
-  max-width: 100%;
 }
 
 .block-receiver {
@@ -3086,11 +3089,6 @@ td.username img.gravatar {
 
 #login-form label, .settings.enabled_scm td.scm_name, #tab-content-members fieldset legend, #tab-content-memberships fieldset legend, #tab-content-users fieldset legend, table.cal td.today p.day-num, .task.label.project, .task.label.version {
   font-weight: 700;
-}
-
-div.wiki ul.toc a:hover {
-  color: #c61a1a;
-  text-decoration: underline;
 }
 
 a img, #issue_tree table.issues, #relations table.issues, div.wiki .noborder, div.wiki .noborder td, div.wiki .noborder th {
