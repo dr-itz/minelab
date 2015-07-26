@@ -15,6 +15,7 @@
 @import "scm";
 @import "contextmenu";
 @import "jstoolbar";
+@import "redmine-icons";
 
 /* Common */
 body {
@@ -2535,153 +2536,6 @@ a.close-icon {
   color: #f66914;
 }
 
-.icon, [class*="icon-"] {
-  background-image: none !important;
-  &:before {
-    @extend .fa;
-    margin-right: 0.3em;
-    vertical-align: middle;
-    position: relative;
-    font-size: 1.2em;
-    top: -2px;
-  }
-}
-
-.icon-add, .icon-add-payment {
-  @extend .fa-plus-circle;
-}
-.icon-edit {
-  @extend .fa-pencil;
-}
-.icon-copy {
-  @extend .fa-copy;
-}
-.icon-duplicate {
-  @extend .fa-clipboard;
-}
-.icon-del {
-  @extend .fa-trash;
-}
-.icon-move {
-  @extend .fa-crosshairs;
-}
-.icon-save {
-  @extend .fa-save;
-}
-.icon-cancel {
-  @extend .fa-ban;
-}
-.icon-multiple {
-  @extend .fa-plus-circle;
-}
-.icon-folder {
-  @extend .fa-folder;
-}
-.open .icon-folder {
-  @extend .fa-folder-open;
-}
-.icon-package {
-  @extend .fa-cube;
-}
-.icon-history {
-  @extend .fa-history;
-}
-.icon-time-add {
-  @extend .fa-clock-o;
-}
-.icon-stats {
-  @extend .fa-line-chart;
-}
-.icon-warning {
-  @extend .fa-warning;
-}
-.icon-fav {
-  @extend .fa-star;
-}
-.icon-fav-off {
-  @extend .fa-star-o;
-}
-.icon-reload {
-  @extend .fa-refresh;
-}
-.icon-lock {
-  @extend .fa-lock;
-}
-.icon-unlock {
-  @extend .fa-unlock;
-}
-.icon-checked {
-  @extend .fa-check-square;
-}
-.icon-report {
-  @extend .fa-pie-chart;
-}
-.icon-comment {
-  @extend .fa-comment;
-}
-.icon-summary {
-  @extend .fa-file-text;
-}
-.icon-zoom-out {
-  @extend .fa-search-minus;
-}
-.icon-passwd {
-  @extend .fa-asterisk;
-}
-.icon-test {
-  @extend .fa-plus-circle;
-}
-.icon-file {
-  @extend .fa-file-o;
-  &.text-plain {
-    @extend .fa-file-text-o;
-  }
-  &.text-x-c {
-    @extend .fa-file-code-o;
-  }
-  &.text-x-csharp {
-    @extend .fa-file-code-o;
-  }
-  &.text-x-java {
-    @extend .fa-file-code-o;
-  }
-  &.text-x-javascript {
-    @extend .fa-file-code-o;
-  }
-  &.text-x-php {
-    @extend .fa-file-code-o;
-  }
-  &.text-x-ruby {
-    @extend .fa-file-code-o;
-  }
-  &.text-xml {
-    @extend .fa-file-code-o;
-  }
-  &.text-css {
-    @extend .fa-file-code-o;
-  }
-  &.text-html {
-    @extend .fa-file-code-o;
-  }
-  &.application-pdf {
-    @extend .fa-file-pdf-o;
-  }
-  &.image-gif, &.image-jpeg, &.image-png, &.image-tiff {
-    @extend .fa-file-image-o;
-  }
-  &.application-zip, &.application-x-gzip, &.application-java-archive {
-    @extend .fa-file-archive-o;
-  }
-}
-.icon-pdf {
-  @extend .fa-file-pdf-o;
-}
-.icon-start, .tt_start {
-  @extend .fa-play;
-}
-.icon-stop, .tt_stop {
-  @extend .fa-stop;
-}
 
 img.gravatar {
   background: white;
@@ -3217,8 +3071,8 @@ dt.issue-closed, #search-results dt.issue.closed {
   @extend .fa-ticket;
 }
 
-dt.attachment, .icon-attachment {
-  @extend .fa-paperclip;
+dt.attachment {
+  @extend .icon-attachment;
 }
 
 dt.time-entry:before, dt.attachment:before, dt.issue-closed:before {
@@ -3226,8 +3080,8 @@ dt.time-entry:before, dt.attachment:before, dt.issue-closed:before {
   margin-right: 0.5em;
 }
 
-dt.time-entry, .icon-time {
-  @extend .fa-clock-o;
+dt.time-entry, {
+  @extend .icon-time;
 }
 
 div#roadmap .related-issues, div#version-summary fieldset, #projects-index ul.projects li.root, div.wiki ul, div.wiki ol {
@@ -3280,10 +3134,6 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
   color: red;
 }
 
-.icon-details, .icon-zoom-in {
-  @extend .fa-search-plus;
-}
-
 
 .icon-contact {
   @extend .fa-book;
@@ -3319,42 +3169,32 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
 }
 
 .icon-merge {
-  @extend .fa;
   @extend .fa-level-up;
 }
 
-dt.project, .icon-projects {
-  @extend .fa;
-  @extend .fa-cubes;
+dt.project {
+  @extend .icon-projects;
+  &:before {
+    @extend .fa;
+  }
 }
-
-.icon-user {
-  @extend .fa;
-  @extend .fa-user;
+dt.issue {
+  @extend .icon-issue;
+  &:before {
+    @extend .fa;
+  }
 }
-
-dt.issue, .icon-issue {
-  @extend .fa;
-  @extend .fa-square;
-}
-
 dt.issue-edit {
-  @extend .fa;
   @extend .fa-pencil-square;
+  &:before {
+    @extend .fa;
+  }
 }
-
 dt.changeset {
-  @extend .fa;
   @extend .fa-gears;
-}
-
-.icon-help {
-  @extend .fa;
-  @extend .fa-info-circle;
-}
-
-.icon-server-authentication {
-  @extend .fa-key;
+  &:before {
+    @extend .fa;
+  }
 }
 
 .controller-people.action-show, .controller-contacts.action-show {
