@@ -9,8 +9,7 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 /* Theme functions */
 
 jQuery(document).ready(function($){
-	$('#top-menu .home').text('').clone().prependTo('#header h1');
-	$('#top-menu .home').parent().remove();
+	$('#top-menu .home').clone().text('').prependTo('#header h1');
 
 	$('input.questions-search').wrap('<span class="live_search normal"></span>');
 
