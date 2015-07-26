@@ -1125,6 +1125,9 @@ span.search_for_watchers a, span.add_attachment a {
   border: 1px solid $medium-grey;
   border-radius: 4px;
   margin: 0 0 1em;
+  > h4 {
+    margin-top: 0;
+  }
 }
 
 div.square {
@@ -1411,28 +1414,65 @@ div#issue-changesets {
   }
 }
 
-div#activity dl, #search-results {
-  margin-left: 0;
+div#activity {
+  dl{
+    margin-left: 30px;
+  }
+  dt, .journal {
+    clear: left;
+  }
+  dt {
+    background-image: none !important;
+    &.me .time {
+      border-bottom: 1px solid $medium-grey;
+    }
+    .time {
+      color: $medium-grey;
+      font-size: 80%;
+    }
+    &.grouped {
+      margin-left: 2.8em;
+    }
+    img.gravatar {
+      float: left;
+      margin: 0 1.2em 1.2em 0;
+    }
+  }
+  dd {
+    margin-bottom: 1em;
+    padding-left: 2.8em;
+    font-size: 0.9em;
+    &.grouped {
+      margin-left: 9em;
+    }
+  }
+
+  + a {
+    @extend .button;
+    margin-top: 2em;
+    &:active, &:focus {
+      @extend .button:active;
+    }
+  }
 }
 
-div#activity dd, #search-results dd {
-  margin-bottom: 1em;
-  padding-left: 2.8em;
-  font-size: 0.9em;
+#search-results {
+  margin-left: 0;
+  dt {
+    background-image: none !important;
+  }
+  dd {
+    margin-bottom: 1em;
+    padding-left: 20px;
+    margin-left: 0;
+    font-size: 0.9em;
+  }
 }
 
 div#activity dt, #search-results dt {
   margin-bottom: 0;
   line-height: 18px;
-}
-
-div#activity dt.me .time {
-  border-bottom: 1px solid $medium-grey;
-}
-
-div#activity dt .time {
-  color: $medium-grey;
-  font-size: 80%;
+  background-repeat: no-repeat;
 }
 
 div#activity span.project:after, #search-results span.project:after {
@@ -1444,48 +1484,65 @@ div#activity dd span.description, #search-results dd span.description {
   color: $grey;
 }
 
-div#activity dt.grouped {
-  margin-left: 2.8em;
+div#search-results-counts {
+  ul {
+    margin-top: 0.5em;
+  }
+  li {
+    list-style-type: none;
+    float: left;
+    margin-left: 1em;
+  }
 }
 
-div#activity dd.grouped {
-  margin-left: 9em;
+
+dt {
+  &:before {
+    @extend .fa;
+    margin-right: 0.5em;
+  }
+  &.project {
+    @extend .icon-projects;
+  }
+  &.issue {
+    @extend .icon-issue;
+  }
+  &.issue-edit {
+    @extend .fa-pencil-square;
+  }
+  &.changeset {
+    @extend .fa-gears;
+  }
+  &.issue-note {
+    @extend .fa-comment-o;
+  }
+  &.news {
+    @extend .fa-newspaper-o;
+  }
+  &.message {
+    @extend .fa-comment;
+  }
+  &.reply {
+    @extend .fa-reply;
+  }
+  &.wiki-page {
+    @extend .fa-pencil-square-o;
+  }
+  &.document {
+    @extend .fa-file-o;
+  }
+  &.issue-closed, &.issue.closed {
+    @extend .fa-ticket;
+  }
+  &.attachment {
+    @extend .icon-attachment;
+  }
+  &.time-entry, {
+    @extend .icon-time;
+  }
 }
 
-#search-results dd {
-  margin-bottom: 1em;
-  padding-left: 20px;
-  margin-left: 0;
-}
-
-div#search-results-counts li {
-  list-style-type: none;
-  float: left;
-  margin-left: 1em;
-}
-
-dt.issue-note {
-  background-image: url(../images/ticket_note.png);
-}
-
-dt.news {
-  background-image: url(../images/news.png);
-}
-
-dt.message {
-  background-image: url(../images/message.png);
-}
-
-dt.reply {
-  background-image: url(../images/comments.png);
-}
-
-dt.wiki-page {
-  background-image: url(../images/wiki_edit.png);
-}
-
-dt.document {
-  background-image: url(../images/document.png);
+#activity dt.issue-note, #activity dt.wiki-page {
 }
 
 div#roadmap .wiki h2 {
@@ -2502,27 +2559,11 @@ td.username img.gravatar {
   margin: 0 0.5em 0 0;
 }
 
-#activity dt img.gravatar {
-  float: left;
-  margin: 0 1.2em 1.2em 0;
-}
-
 .icon-gravatar {
   float: left;
   margin-right: 4px;
 }
 
-#activity dt, .journal {
-  clear: left;
-}
-
-#activity + a {
-  @extend .button;
-  margin-top: 2em;
-  &:active, &:focus {
-    @extend .button:active;
-  }
-}
 
 .hascontextmenu {
   cursor: context-menu;
@@ -2994,35 +3035,12 @@ div.journal {
   top: initial!important;
 }
 
-#activity dt.issue-note, #activity dt.wiki-page {background-image: none!important;}
-
-div#search-results-counts ul {
-  margin-top: 0.5em;
-}
-
 table.progress td {
   height: 1em;
 }
 
 div#activity dd .description, #search-results dd .description, ul.properties li span, .summary {
   font-style: italic;
-}
-
-dt.issue-closed, #search-results dt.issue.closed {
-  @extend .fa-ticket;
-}
-
-dt.attachment {
-  @extend .icon-attachment;
-}
-
-dt.time-entry:before, dt.attachment:before, dt.issue-closed:before {
-  @extend .fa;
-  margin-right: 0.5em;
-}
-
-dt.time-entry, {
-  @extend .icon-time;
 }
 
 div#roadmap .related-issues, div#version-summary fieldset, #projects-index ul.projects li.root, div.wiki ul, div.wiki ol {
@@ -3073,31 +3091,6 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
 
 .version-overdue a, .issue-overdue a, .project-overdue a, .syntaxhl .imaginary {
   color: red;
-}
-
-dt.project {
-  @extend .icon-projects;
-  &:before {
-    @extend .fa;
-  }
-}
-dt.issue {
-  @extend .icon-issue;
-  &:before {
-    @extend .fa;
-  }
-}
-dt.issue-edit {
-  @extend .fa-pencil-square;
-  &:before {
-    @extend .fa;
-  }
-}
-dt.changeset {
-  @extend .fa-gears;
-  &:before {
-    @extend .fa;
-  }
 }
 
 #block-form {
