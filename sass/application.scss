@@ -60,9 +60,9 @@ a {
   &.collapsible {
     padding-left: 1em;
     background: url(../images/arrow_expanded.png) no-repeat -3px 40%;
-  }
-  &.collapsible.collapsed {
-    background: url(../images/arrow_collapsed.png) no-repeat -5px 40%;
+    &.collapsed {
+      background: url(../images/arrow_collapsed.png) no-repeat -5px 40%;
+    }
   }
 }
 
@@ -965,37 +965,43 @@ table.plugins {
 }
 
 
-table.list tbody tr.group td {
-  font-weight: 700;
-  border-bottom: 1px solid $medium-grey;
-  text-align: left;
-  padding: 0.8em 0 0.5em 0.3em;
-}
+table.list tbody {
+  tr {
+    &.group {
+      td {
+        font-weight: 700;
+        border-bottom: 1px solid $medium-grey;
+        text-align: left;
+        padding: 0.8em 0 0.5em 0.3em;
+      }
 
-table.list tbody tr.group span.count {
-  position: relative;
-  color: white;
-  background: $green;
-  border-radius: 4px;
-  margin-left: 0.5em;
-  padding: 0.2em 0.5em;
-  font-size: 0.85em;
-  display: inline-block;
-}
+      span.count {
+        position: relative;
+        color: white;
+        background: $green;
+        border-radius: 4px;
+        margin-left: 0.5em;
+        padding: 0.2em 0.5em;
+        font-size: 0.85em;
+        display: inline-block;
+      }
 
-tr.group a.toggle-all {
-  font-weight: 400;
-  display: none;
-  margin-left: 0.5em;
-  font-size: 0.85em;
-}
+      a.toggle-all {
+        font-weight: 400;
+        display: none;
+        margin-left: 0.5em;
+        font-size: 0.85em;
+      }
 
-table.list tbody tr:hover {
-  background-color: rgba($orange, 0.1);
-}
+      &:hover {
+        background-color: inherit;
+      }
+    }
 
-table.list tbody tr.group:hover {
-  background-color: inherit;
+    &:hover {
+      background-color: rgba($orange, 0.1);
+    }
+  }
 }
 
 table td {
@@ -1161,18 +1167,15 @@ span.search_for_watchers a, span.add_attachment a {
 
 .highlight {
   background-color: #fcfd8d;
-}
-
-.highlight.token-1 {
-  background-color: #ffaaaa;
-}
-
-.highlight.token-2 {
-  background-color: #aaffaa;
-}
-
-.highlight.token-3 {
-  background-color: #aaaaff;
+  &.token-1 {
+    background-color: #ffaaaa;
+  }
+  &.token-2 {
+    background-color: #aaffaa;
+  }
+  &.token-3 {
+    background-color: #aaaaff;
+  }
 }
 
 .box {
@@ -1562,24 +1565,25 @@ div#version-summary {
   background-color: white;
 }
 
-table#time-report td.hours, table#time-report th.period, table#time-report th.total {
-  text-align: right;
-  padding-right: 0.5em;
-}
-
-table#time-report tbody tr.subtotal {
-  font-style: italic;
-  color: #777777;
-}
-
-table#time-report tbody tr.subtotal td.hours {
-  color: #b0b0b0;
-}
-
-table#time-report tbody tr.total {
-  font-weight: 700;
-  background-color: #eeeeee;
-  border-top: 1px solid #e4e4e4;
+table#time-report {
+  td.hours, th.period, th.total {
+    text-align: right;
+    padding-right: 0.5em;
+  }
+  tbody {
+    tr.subtotal {
+      font-style: italic;
+      color: #777777;
+      td.hours {
+        color: #b0b0b0;
+      }
+    }
+    tr.total {
+      font-weight: 700;
+      background-color: #eeeeee;
+      border-top: 1px solid #e4e4e4;
+    }
+  }
 }
 
 div.wiki-page .contextual a {
@@ -1597,10 +1601,9 @@ select#issue_done_ratio {
 ul.projects {
   padding-left: 1em;
   margin: 0;
-}
-
-ul.projects ul {
-  padding-left: 1.6em;
+  ul {
+    padding-left: 1.6em;
+  }
 }
 
 #projects-index {
@@ -1768,20 +1771,19 @@ span.required {
   border: 1px solid #9eb1c2;
   border-radius: 2px;
   padding: 2px 4px 4px 2px;
-}
 
-.check_box_group label {
-  font-weight: 400;
-  margin-left: 0 !important;
-  text-align: left;
-  float: none;
-  display: block;
-  width: auto;
-}
-
-.check_box_group.bool_cf {
-  border: 0;
-  background: inherit;
+  &.bool_cf {
+    border: 0;
+    background: inherit;
+  }
+  label {
+    font-weight: 400;
+    margin-left: 0 !important;
+    text-align: left;
+    float: none;
+    display: block;
+    width: auto;
+  }
 }
 
 #attachments_fields {
