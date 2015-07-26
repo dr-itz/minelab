@@ -900,6 +900,13 @@ table.plugins {
   }
 }
 
+a#check-for-updates {
+  @extend .fa-refresh;
+  &:before {
+    @extend .fa;
+    margin-right: 5px;
+  }
+}
 
 table.list tbody {
   tr {
