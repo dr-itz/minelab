@@ -1,4 +1,5 @@
-.icon, [class*="icon-"] {
+.icon,
+[class*="icon-"] {
   background-image: none !important;
   &:before {
     @extend .fa;
@@ -10,7 +11,8 @@
   }
 }
 
-.icon-add, .icon-add-payment {
+.icon-add,
+.icon-add-payment {
   @extend .fa-plus-circle;
 }
 .icon-edit {
@@ -85,7 +87,8 @@
 .icon-summary {
   @extend .fa-file-text;
 }
-.icon-details, .icon-zoom-in {
+.icon-details,
+.icon-zoom-in {
   @extend .fa-search-plus;
 }
 .icon-zoom-out {
@@ -153,10 +156,15 @@
   &.application-pdf {
     @extend .fa-file-pdf-o;
   }
-  &.image-gif, &.image-jpeg, &.image-png, &.image-tiff {
+  &.image-gif,
+  &.image-jpeg,
+  &.image-png,
+  &.image-tiff {
     @extend .fa-file-image-o;
   }
-  &.application-zip, &.application-x-gzip, &.application-java-archive {
+  &.application-zip,
+  &.application-x-gzip,
+  &.application-java-archive {
     @extend .fa-file-archive-o;
   }
 }
@@ -164,9 +172,9 @@
   @extend .fa-file-pdf-o;
 }
 
-.icon-start, .tt_start {
+.icon-start {
   @extend .fa-play;
 }
-.icon-stop, .tt_stop {
+.icon-stop {
   @extend .fa-stop;
 }

@@ -34,7 +34,8 @@ a#stealth_toggle {
     &.cms {
       @extend .fa-sitemap;
     }
-    &.tt_start:before, &.tt_stop:before {
+    &.tt_start:before,
+    &.tt_stop:before {
       position: relative;
       top: 0;
     }
@@ -100,6 +101,13 @@ a#stealth_toggle {
   @extend .fa-level-up;
 }
 
+.tt_start {
+  @extend .icon-start;
+}
+.tt_stop {
+  @extend .icon-stop;
+}
+
 div.contact {
   border: 1px solid $medium-grey !important;
   background: $white !important;
@@ -126,7 +134,9 @@ div.contact.details table.subject_header h1 {
 .icon-add.checklist-new-only {
   @extend a;
   cursor: pointer;
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     color: $dark-blue;
   }
 }
@@ -136,12 +146,41 @@ div.agile-board.autoscroll {
 }
 
 div.issue.invoice {
-  div.subject, .author {
+  div.subject,
+  .author {
     padding-left: 0 !important;
   }
 }
 
-.controller-people.action-show, .controller-contacts.action-show {
+th.live_search {
+  &:before {
+    top: 1.1em;
+    left: 1em;
+  }
+}
+
+.live_search {
+  position: relative;
+  font-size: 0.7em;
+  &.normal {
+    font-size: 1em;
+  }
+}
+
+input.live_search_field,
+input.questions-search {
+  @extend input.autocomplete;
+}
+
+input.questions-search {
+  width: 100% !important;
+  &.ajax-loading {
+    background-position: 98% center !important;
+  }
+}
+
+.controller-people.action-show,
+.controller-contacts.action-show {
   #main {
     #sidebar {
       @include span-columns(4);
