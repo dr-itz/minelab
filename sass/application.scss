@@ -665,6 +665,8 @@ select {
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
   }
   td {
     padding: 0.5em;
@@ -707,7 +709,7 @@ input#openid_url {
 table {
   text-align: left;
   color: $grey;
-  border: 0 !important;
+  border: 0;
   &.list {
     border: 0;
     border-collapse: collapse;
