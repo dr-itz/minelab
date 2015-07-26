@@ -1432,8 +1432,9 @@ div#activity {
       border-bottom: 1px solid $medium-grey;
     }
     .time {
-      color: $medium-grey;
+      color: $grey;
       font-size: 80%;
+      margin-right: 5px;
     }
     &.grouped {
       margin-left: 2.8em;
