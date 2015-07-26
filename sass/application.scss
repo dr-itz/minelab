@@ -121,49 +121,44 @@ select {
 
 /* Layout */
 
-.outer-container {
-  @include outer-container;
-}
-
 #wrapper {
   @include row;
   background: white;
 }
 
 #top-menu {
+  @include clearfix;
   @include row;
   background: $dark-blue;
   color: white;
-  padding: 0;
+  padding: 0 10px;
   cursor: default;
   position: relative;
   z-index: 999;
   height: 2em;
-  .outer-container {
-    ul.menu-children {
-      width: 26em;
-      top: 99%;
-      border: 0;
-      background: $dark-blue;
-      border-radius: 0 0 4px 4px;
-      padding: 0.5em 1em 0.6em;
-      > li {
-        @include span-columns(6);
-        @include omega(2n);
-        padding: 0;
-        a {
-          color: $grey-blue;
-          padding: 0.4em;
-          width: 95%;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          &:hover, &:active, &:focus {
-            color: white;
-          }
-          &:before {
-            margin-right: 0.5em !important;
-          }
+  ul.menu-children {
+    width: 26em;
+    top: 99%;
+    border: 0;
+    background: $dark-blue;
+    border-radius: 0 0 4px 4px;
+    padding: 0.5em 1em 0.6em;
+    > li {
+      @include span-columns(6);
+      @include omega(2n);
+      padding: 0;
+      a {
+        color: $grey-blue;
+        padding: 0.4em;
+        width: 95%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover, &:active, &:focus {
+          color: white;
+        }
+        &:before {
+          margin-right: 0.5em !important;
         }
       }
     }
@@ -285,6 +280,7 @@ select {
 }
 
 #header {
+  @include clearfix;
   @include row;
   background: $blue;
   color: white;
@@ -318,6 +314,7 @@ select {
   }
   #quick-search {
     position: relative;
+    margin-right: 10px;
     top: 0.45em;
     z-index: 5;
     .icon-search {
@@ -370,6 +367,7 @@ select {
 
 #main-menu {
   @include row;
+  padding: 0 10px;
   background: $light-grey;
   cursor: default;
   box-shadow: inset 0 -1px 0 $medium-grey;
@@ -459,13 +457,8 @@ select {
   }
 }
 
-#top-menu .outer-container,
-#header .outer-container {
-  padding: 0 10px;
-}
-
 #main {
-  @include outer-container;
+  @include clearfix;
   padding: 0 20px 10px;
   &.nosidebar {
     #content {

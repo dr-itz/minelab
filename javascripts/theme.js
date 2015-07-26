@@ -9,9 +9,6 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 /* Theme functions */
 
 jQuery(document).ready(function($){
-	$('#top-menu, #header').wrapInner('<div class="outer-container"></div>');
-	$('#main-menu').wrapInner('<div class="outer-container"></div>').detach().appendTo('#header');
-
 	$('#top-menu .home').text('').clone().prependTo('#header h1');
 	$('#top-menu .home').parent().remove();
 
