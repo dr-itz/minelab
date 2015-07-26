@@ -474,6 +474,28 @@ select {
     &.plugins {
       @extend .fa-puzzle-piece;
     }
+    &.projects {
+      @extend .fa-cubes;
+    }
+    &.users {
+      @extend .fa-user;
+    }
+    &.trackers {
+      @extend .fa-square;
+    }
+    &.issue_statuses {
+      @extend .fa-pencil-square;
+    }
+    &.settings {
+      @extend .fa-gears;
+    }
+    &.info {
+      @extend .fa-info-circle;
+    }
+    &.server_authentication {
+      @extend .fa-key;
+    }
+    // plugins
     &.agile {
       @extend .fa-undo;
     }
@@ -498,27 +520,6 @@ select {
     &.cms {
       @extend .fa-sitemap;
     }
-  }
-  a.projects {
-    @extend .fa-cubes;
-  }
-  a.users {
-    @extend .fa-user;
-  }
-  a.trackers {
-    @extend .fa-square;
-  }
-  a.issue_statuses {
-    @extend .fa-pencil-square;
-  }
-  a.settings {
-    @extend .fa-gears;
-  }
-  a.info {
-    @extend .fa-info-circle;
-  }
-  a.server_authentication {
-    @extend .fa-key;
   }
 }
 
@@ -823,19 +824,19 @@ tr.project {
 tr.entry {
   border: 1px solid #f8f8f8;
 
-  td.filename {
-    width: 30%;
-    text-align: left;
-  }
-
-  td.filename_no_report {
-    width: 70%;
-    text-align: left;
-  }
-
-  td.size {
-    text-align: right;
-    font-size: 90%;
+  td {
+    &.filename {
+      width: 30%;
+      text-align: left;
+    }
+    &.filename_no_report {
+      width: 70%;
+      text-align: left;
+    }
+    &.size {
+      text-align: right;
+      font-size: 90%;
+    }
   }
 
   &.file td.filename a, &.file td.filename_no_report a {
@@ -870,15 +871,16 @@ tr.changeset {
     margin-bottom: 0;
   }
 
-  td.revision_graph {
-    width: 15%;
-    background-color: #fffffb;
-  }
-
-  td.author, td.committed_on {
-    text-align: center;
-    width: 15%;
-    white-space: nowrap;
+  td {
+    &.revision_graph {
+      width: 15%;
+      background-color: #fffffb;
+    }
+    &.author, &.committed_on {
+      text-align: center;
+      width: 15%;
+      white-space: nowrap;
+    }
   }
 }
 
@@ -1664,16 +1666,18 @@ table.transitions td.enabled {
   background: #bbffbb;
 }
 
-table.fields_permissions select {
-  font-size: 90%;
-}
-
-table.fields_permissions td.readonly {
-  background: #dddddd;
-}
-
-table.fields_permissions td.required {
-  background: #dd8888;
+table.fields_permissions {
+  select {
+    font-size: 90%;
+  }
+  td {
+    &.readonly {
+      background: #dddddd;
+    }
+    &.required {
+      background: #dd8888;
+    }
+  }
 }
 
 p.pagination {
@@ -1822,10 +1826,10 @@ a.remove-upload {
   width: 1px;
   display: inline-block;
   padding-left: 16px;
-}
 
-a.remove-upload:hover {
-  text-decoration: none !important;
+  &:hover {
+    text-decoration: none !important;
+  }
 }
 
 div.fileover {
@@ -1838,7 +1842,6 @@ div.attachments {
   p {
     margin: 4px 0 2px;
   }
-
   span.author {
     font-size: 0.9em;
     color: #888888;
@@ -1855,7 +1858,6 @@ div.thumbnails {
     display: inline-block;
     margin-right: 2px;
   }
-
   img {
     margin: 3px;
   }
@@ -2235,45 +2237,43 @@ div.tabs-buttons {
   border-bottom: 1px solid $medium-grey;
 }
 
-button.tab-left, button.tab-right {
-  cursor: pointer;
-  position: absolute;
-  width: 1.5em;
-  bottom: -1px;
-  padding: 1em 0;
-  text-align: center;
-  border: 0 !important;
-  color: $medium-grey;
-  background: none !important;
-  &:before {
-    @extend .fa;
+button {
+  &.tab-left, &.tab-right {
+    cursor: pointer;
+    position: absolute;
+    width: 1.5em;
+    bottom: -1px;
+    padding: 1em 0;
+    text-align: center;
+    border: 0 !important;
+    color: $medium-grey;
+    background: none !important;
+    &:before {
+      @extend .fa;
+    }
   }
-}
-
-button.tab-left {
-  left: 0;
-  @extend .fa-chevron-left;
-}
-
-button.tab-right {
-  right: 0;
-  @extend .fa-chevron-right;
+  &.tab-left {
+    left: 0;
+    @extend .fa-chevron-left;
+  }
+  &.tab-right {
+    right: 0;
+    @extend .fa-chevron-right;
+  }
 }
 
 .diff_out {
   background: #ffcccc;
-}
-
-.diff_out span {
-  background: #ffaaaa;
+  span {
+    background: #ffaaaa;
+  }
 }
 
 .diff_in {
   background: #ccffcc;
-}
-
-.diff_in span {
-  background: #aaffaa;
+  span {
+    background: #aaffaa;
+  }
 }
 
 .text-diff {
@@ -2375,11 +2375,10 @@ a.wiki-anchor {
   display: none;
   margin-left: 6px;
   text-decoration: none;
-}
-
-a.wiki-anchor:hover {
-  color: #aaaaaa !important;
-  text-decoration: none;
+  &:hover {
+    color: #aaaaaa !important;
+    text-decoration: none;
+  }
 }
 
 h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor {
@@ -2417,10 +2416,9 @@ a.close-icon {
   &:before {
     @extend .fa;
   }
-}
-
-a.close-icon:hover {
-  color: $red;
+  &:hover {
+    color: $red;
+  }
 }
 
 .controller-gantts.action-show {
@@ -2447,15 +2445,14 @@ a.close-icon:hover {
 
 .gantt_subjects {
   font-size: 0.8em;
-}
-
-.gantt_subjects div {
-  line-height: 16px;
-  height: 16px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding-left: 1em;
+  div {
+    line-height: 16px;
+    height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 1em;
+  }
 }
 
 .task {
@@ -2467,6 +2464,23 @@ a.close-icon:hover {
   white-space: nowrap;
   margin: 0;
   padding: 0;
+  &.parent.marker {
+    &.starting, &.ending {
+      position: absolute;
+      width: 8px;
+      height: 16px;
+      margin-left: -4px;
+      top: -1px;
+    }
+    &.starting {
+      background: url(../images/task_parent_end.png) no-repeat 0 0;
+      left: 0;
+    }
+    &.ending {
+      background: url(../images/task_parent_end.png) no-repeat 0 0;
+      right: 0;
+    }
+  }
 }
 
 .task_late {
@@ -2479,39 +2493,18 @@ a.close-icon:hover {
   border: 1px solid #00c600;
 }
 
-.task_todo {
-  background: #aaaaaa url(../images/task_todo.png);
-  border: 1px solid #aaaaaa;
-}
-
-.task_todo.parent {
-  background: #888888;
-  border: 1px solid #888888;
-  height: 3px;
-}
-
 .task_late.parent, .task_done.parent {
   height: 3px;
 }
 
-.task.parent.marker.starting {
-  position: absolute;
-  background: url(../images/task_parent_end.png) no-repeat 0 0;
-  width: 8px;
-  height: 16px;
-  margin-left: -4px;
-  left: 0;
-  top: -1px;
-}
-
-.task.parent.marker.ending {
-  position: absolute;
-  background: url(../images/task_parent_end.png) no-repeat 0 0;
-  width: 8px;
-  height: 16px;
-  margin-left: -4px;
-  right: 0;
-  top: -1px;
+.task_todo {
+  background: #aaaaaa url(../images/task_todo.png);
+  border: 1px solid #aaaaaa;
+  &.parent {
+    background: #888888;
+    border: 1px solid #888888;
+    height: 3px;
+  }
 }
 
 .version.marker {
