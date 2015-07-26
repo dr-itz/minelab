@@ -189,7 +189,7 @@ select {
     }
     &:before {
       @extend .fa;
-      margin-right: 0.5em;
+      margin-right: 5px;
     }
     &.my-page {
       @extend .fa-dashboard;
@@ -310,12 +310,9 @@ select {
         height: auto !important;
         img.gravatar {
           top: 0;
-          margin-right: 0.5em;
+          margin-right: 5px;
         }
       }
-    }
-    a:before {
-      margin-right: 3px;
     }
     .menu-children {
       width: 18em;
@@ -3514,6 +3511,5 @@ p, div, span {
 }
 
 a#stealth_toggle {
-  @extend .fa;
   @extend .fa-eye-slash;
 }
