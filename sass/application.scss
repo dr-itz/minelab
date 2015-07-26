@@ -1746,7 +1746,8 @@ table.fields_permissions {
 p.pagination {
   .page,
   .next,
-  .previous {
+  .previous,
+  .spacer {
     position: relative;
     float: left;
     padding: 6px 14px;
