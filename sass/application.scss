@@ -1742,8 +1742,47 @@ table.fields_permissions {
 }
 
 p.pagination {
-  margin-top: 8px;
-  font-size: 90%;
+  .page,
+  .next,
+  .previous {
+    position: relative;
+    float: left;
+    padding: 6px 14px;
+    line-height: 1.42857;
+    text-decoration: none;
+    color: #FFF;
+    background-color: $blue-green;
+    border: 1px solid transparent;
+    margin-left: -1px;
+    margin-top: -0.5em;
+  }
+  .current,
+  .page:hover,
+  .next:hover,
+  .previous:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: $dark-blue-green;
+    border-color: transparent;
+  }
+
+  :first-child {
+    margin-left: 0px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  :nth-last-child(3) {
+    margin-right: 0px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  .items {
+    margin-left: 1em;
+  }
+  .per-page {
+    margin-left: 0.6em;
+  }
 }
 
 .tabular {
