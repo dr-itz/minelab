@@ -2529,7 +2529,7 @@ a.close-icon {
   color: #f66914;
 }
 
-.icon, [class*="icon-"] ,#context-menu li a {
+.icon, [class*="icon-"] {
   background-image: none !important;
   &:before {
     @extend .fa;
@@ -2539,13 +2539,6 @@ a.close-icon {
     font-size: 1.2em;
     top: -2px;
   }
-}
-
-#context-menu li a:before {
-  font-size: 1em;
-  top: 0.4em;
-  left: 0.4em;
-  position: absolute;
 }
 
 .icon-add, .icon-add-payment {
