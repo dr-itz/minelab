@@ -1745,6 +1745,9 @@ table.fields_permissions {
 }
 
 p.pagination {
+  a {
+    transition-duration: 0s;
+  }
   .page,
   .next,
   .previous,
