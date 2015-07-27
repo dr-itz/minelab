@@ -108,13 +108,13 @@ select {
 }
 
 #{$all-button-inputs},
-#{$all-button-inputs-hover},
-.button,
-.button:hover {
-  border: 1px solid $blue-green;
+.button {
+  border: 1px solid $dark-blue-green;
   background: $blue-green;
+  font-family: inherit;
+  line-height: inherit;
   color: white;
-  padding: 0.5em 1.5em;
+  padding: 6px 14px;
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
@@ -124,7 +124,20 @@ select {
   height: 34px;
   + a {
     font-size: 1em;
+    padding-top: 8px;
     @extend .button;
+  }
+  &:hover {
+    background-color: $dark-blue-green;
+  }
+}
+
+input[type="submit"] {
+  background-color: #446E9B;
+  border-color: #3C6189;
+  &:hover {
+    background-color: #345578;
+    border-color: #2A435F;
   }
 }
 
