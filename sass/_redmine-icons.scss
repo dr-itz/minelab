@@ -26,6 +26,9 @@
 }
 .icon-del {
   @extend .fa-trash;
+  &:hover {
+    color: $red;
+  }
 }
 .icon-move {
   @extend .fa-crosshairs;
