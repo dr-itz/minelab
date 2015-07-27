@@ -345,12 +345,12 @@ input[type="submit"] {
     left: 0;
     padding: 0.2em;
     text-align: center;
-    &:before {
-      content: url(../images/logo.svg);
-    }
+    background-image: url("../images/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
     &:hover,
     &:active {
-      background: rgba($dark-blue, 0.5);
+      background-color: rgba($dark-blue, 0.5);
     }
   }
   #quick-search {
