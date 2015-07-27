@@ -1301,10 +1301,20 @@ div.issue {
   div.subject {
     h3 {
       margin: 0 0 0.1em;
+      border-bottom: 1px solid #ccc;
     }
     p {
       font-size: 90%;
       margin: 0 0 0.3em;
+    }
+    div div {
+      p, h3 {
+        @extend .fa-caret-right;
+        &:before {
+          margin-right: 5px;
+          @extend .fa;
+        }
+      }
     }
   }
 
