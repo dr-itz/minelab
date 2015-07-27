@@ -11,13 +11,16 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 jQuery(document).ready(function($){
 	$('#top-menu .home').clone().text('').prependTo('#header h1');
 
+	$('<a id="sidebar-toggle" href="#"><i class="fa fa-angle-left"></i></a>').prependTo('#sidebar');
+	$('#sidebar-toggle').click(function () {
+		$('#sidebar').toggleClass('hidden');
+		$('#sidebar-toggle i').toggleClass('fa-angle-right');
+	});
+
 	$('input.questions-search').wrap('<span class="live_search normal"></span>');
+	$('input.autocomplete, input.live_search_field, input#q').wrap('<span class="icon-search"></span>');
 
-	$(window).load(function(){
-		$('input.autocomplete, input.live_search_field, input#q').wrap('<span class="icon-search"></span>');
-
-		$('#quick-search select').select2({
-			width: 'element'
-		});
+	$('#quick-search select').select2({
+		width: 'element'
 	});
 });
