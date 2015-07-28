@@ -515,14 +515,14 @@ input[type="submit"] {
   }
   #sidebar {
     float: left;
-    width: 15%;
+    width: 18%;
     margin-right: 30px;
     padding-left: 20px;
     position: relative;
 
     transition-duration: 0.5s;
     &.hidden {
-      margin-left: -15%;
+      margin-left: -18%;
     }
     a#sidebar-toggle {
       position: absolute;
