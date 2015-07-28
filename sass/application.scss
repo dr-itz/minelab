@@ -1215,6 +1215,9 @@ span.add_attachment a {
   > h4 {
     margin-top: 0;
   }
+  fieldset:last-child {
+    margin-bottom: 0;
+  }
 }
 
 div.square {
@@ -1263,6 +1266,10 @@ fieldset.box {
     font-size: 1.2em;
     width: 100%;
     border-bottom: 1px solid $medium-grey;
+  }
+
+  & > p {
+    margin: 0;
   }
 }
 
