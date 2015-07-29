@@ -1,5 +1,4 @@
-.icon,
-[class*="icon-"] {
+.icon {
   background-image: none !important;
   &:before {
     @extend .fa;
@@ -13,118 +12,155 @@
 
 .icon-add,
 .icon-add-payment {
+  @extend .icon;
   @extend .fa-plus-circle;
 }
 .icon-edit {
+  @extend .icon;
   @extend .fa-pencil;
 }
 .icon-copy {
+  @extend .icon;
   @extend .fa-copy;
 }
 .icon-duplicate {
+  @extend .icon;
   @extend .fa-clipboard;
 }
 .icon-del {
+  @extend .icon;
   @extend .fa-trash;
   &:hover {
     color: $red;
   }
 }
 .icon-move {
+  @extend .icon;
   @extend .fa-crosshairs;
 }
 .icon-save {
+  @extend .icon;
   @extend .fa-save;
 }
 .icon-cancel {
+  @extend .icon;
   @extend .fa-ban;
 }
 .icon-multiple {
+  @extend .icon;
   @extend .fa-plus-circle;
 }
 .icon-folder {
+  @extend .icon;
   @extend .fa-folder;
 }
 .open .icon-folder {
+  @extend .icon;
   @extend .fa-folder-open;
 }
 .icon-package {
+  @extend .icon;
   @extend .fa-cube;
 }
 .icon-history {
+  @extend .icon;
   @extend .fa-history;
 }
 .icon-time-add {
+  @extend .icon;
   @extend .fa-clock-o;
 }
 .icon-stats {
+  @extend .icon;
   @extend .fa-line-chart;
 }
 .icon-warning {
+  @extend .icon;
   @extend .fa-warning;
 }
 .icon-fav {
+  @extend .icon;
   @extend .fa-star;
 }
 .icon-fav-off {
+  @extend .icon;
   @extend .fa-star-o;
 }
 .icon-reload {
+  @extend .icon;
   @extend .fa-refresh;
 }
 .icon-lock {
+  @extend .icon;
   @extend .fa-lock;
 }
 .icon-unlock {
+  @extend .icon;
   @extend .fa-unlock;
 }
 .icon-checked {
+  @extend .icon;
   @extend .fa-check-square;
 }
 .icon-report {
+  @extend .icon;
   @extend .fa-pie-chart;
 }
 .icon-comment {
+  @extend .icon;
   @extend .fa-comment;
 }
 .icon-summary {
+  @extend .icon;
   @extend .fa-file-text;
 }
 .icon-details,
 .icon-zoom-in {
+  @extend .icon;
   @extend .fa-search-plus;
 }
 .icon-zoom-out {
+  @extend .icon;
   @extend .fa-search-minus;
 }
 .icon-passwd {
+  @extend .icon;
   @extend .fa-asterisk;
 }
 .icon-test {
+  @extend .icon;
   @extend .fa-plus-circle;
 }
 .icon-projects {
+  @extend .icon;
   @extend .fa-cubes;
 }
 .icon-user {
+  @extend .icon;
   @extend .fa-user;
 }
 .icon-issue {
+  @extend .icon;
   @extend .fa-square;
 }
 .icon-help {
+  @extend .icon;
   @extend .fa-info-circle;
 }
 .icon-server-authentication {
+  @extend .icon;
   @extend .fa-key;
 }
 .icon-attachment {
+  @extend .icon;
   @extend .fa-paperclip;
 }
 .icon-time {
+  @extend .icon;
   @extend .fa-clock-o;
 }
 .icon-file {
+  @extend .icon;
   @extend .fa-file-o;
   &.text-plain {
     @extend .fa-file-text-o;
@@ -172,12 +208,15 @@
   }
 }
 .icon-pdf {
+  @extend .icon;
   @extend .fa-file-pdf-o;
 }
 
 .icon-start {
+  @extend .icon;
   @extend .fa-play;
 }
 .icon-stop {
+  @extend .icon;
   @extend .fa-stop;
 }

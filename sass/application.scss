@@ -2131,6 +2131,7 @@ input.autocomplete {
   height: auto !important;
   background: white !important;
   z-index: 0;
+  background: #FFF url("../images/magnifier.png") no-repeat scroll 4px 50% !important;
   &.ajax-loading {
     background: url(../images/loading.gif) no-repeat 97% center !important;
   }
