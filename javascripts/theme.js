@@ -15,6 +15,7 @@ jQuery(document).ready(function($){
 	$('#sidebar-toggle').click(function () {
 		$('#sidebar').toggleClass('hidden');
 		$('#sidebar-toggle i').toggleClass('fa-angle-right');
+		return false;
 	});
 
 	$('input.questions-search').wrap('<span class="live_search normal"></span>');
