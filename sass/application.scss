@@ -1849,6 +1849,7 @@ p.pagination {
 .tabular {
   p {
     min-height: 1.8em;
+	line-height: 1.8;
     clear: left;
     margin: 0;
     padding-left: 15em;
@@ -1870,7 +1871,6 @@ p.pagination {
     text-align: right;
     margin-left: -15em;
     width: 14em;
-    margin-top: 0.45em;
     &.floating {
       font-weight: 400;
       margin-left: 0;
