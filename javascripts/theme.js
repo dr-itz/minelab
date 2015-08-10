@@ -9,6 +9,7 @@ break}}},highlight:function(b){var d,e,c=this.findHighlightableChoices();return 
 /* Theme functions */
 
 jQuery(document).ready(function($){
+	$(document).unbind('ajaxSend').unbind('ajaxStop');
 	$('#top-menu .home').clone().text('').prependTo('#header h1');
 
 	$('<a id="sidebar-toggle" href="#"><i class="fa fa-angle-left"></i></a>').prependTo('#sidebar');
