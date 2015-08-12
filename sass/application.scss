@@ -123,12 +123,25 @@ select {
   font-size: 1em;
   height: 34px;
   + a {
+    @extend .button;
     font-size: 1em;
     padding-top: 8px;
-    @extend .button;
   }
   &:hover {
     background-color: $dark-blue-green;
+  }
+}
+
+#issue-form input[type="submit"] + a + a {
+  @extend .button;
+  font-size: 1em;
+  padding-top: 8px;
+  color: #333;
+  background-color: white;
+  border-color: #ccc;
+  &:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
   }
 }
 
