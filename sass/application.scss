@@ -154,16 +154,6 @@ input[type="submit"] {
   }
 }
 
-#{$all-button-inputs-focus},
-#{$all-button-inputs-active},
-.button:focus,
-.button:active {
-  box-shadow: 0px 3px 5px rgba(black, 0.125) inset;
-  + a:active, a:focus {
-    @extend .button:active;
-  }
-}
-
 /* Layout */
 
 #wrapper {
@@ -1572,10 +1562,6 @@ div#activity {
   + a {
     @extend .button;
     margin-top: 2em;
-    &:active,
-    &:focus {
-      @extend .button:active;
-    }
   }
 }
 
@@ -3436,10 +3422,6 @@ textarea.text_cf {
   + p > a {
     @extend .button;
     margin-top: 2em;
-    &:active,
-    &:focus {
-      @extend .button:active;
-    }
   }
 }
 
@@ -3447,10 +3429,6 @@ textarea.text_cf {
   a {
     @extend .button;
     margin-top: 2em;
-    &:active,
-    &:focus {
-      @extend .button:active;
-    }
   }
 }
 
