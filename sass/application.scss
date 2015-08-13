@@ -51,7 +51,6 @@ h4 {
 
 a {
   color: $blue;
-  @include transition-duration(0.3s);
   text-decoration: none;
   font-size: 1em;
   &:hover,
@@ -433,7 +432,6 @@ input[type="submit"] {
       white-space: nowrap;
       text-align: center;
       border-bottom: 3px solid $light-grey;
-      transition-duration: 0s;
       &:hover {
         color: $medium-dark-blue;
         border-bottom: 3px solid $medium-dark-blue;
@@ -1798,9 +1796,6 @@ table.fields_permissions {
 }
 
 p.pagination {
-  a {
-    transition-duration: 0s;
-  }
   .page,
   .next,
   .previous,
@@ -2377,7 +2372,6 @@ p.progress-info {
         padding: 1em;
         color: $grey;
         font-size: 0.9em;
-        transition-duration: 0s;
         &:hover {
           background-color: $light-grey;
           text-decoration: none;
