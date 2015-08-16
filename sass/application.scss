@@ -1248,9 +1248,8 @@ ul {
 
 input,
 select {
-  vertical-align: middle;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 fieldset,
@@ -1868,6 +1867,7 @@ p.pagination {
     &.floating {
       font-weight: 400;
       margin-left: 0;
+      margin-bottom: 2px;
       text-align: left;
       width: 18em;
     }
