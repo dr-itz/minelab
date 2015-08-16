@@ -123,6 +123,10 @@
   @extend .icon;
   @extend .fa-search-minus;
 }
+.icon-email-add {
+  @extend .icon;
+  @extend .fa-envelope-o;
+}
 .icon-passwd {
   @extend .icon;
   @extend .fa-asterisk;
