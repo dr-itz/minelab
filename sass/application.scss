@@ -719,7 +719,8 @@ input[type="submit"] {
     background: none !important;
   }
   #username,
-  #password {
+  #password,
+  #openid_url {
     width: 100%;
   }
 }
@@ -737,8 +738,8 @@ div.modal {
 input#openid_url {
   background: url(../images/openid-bg.gif) no-repeat;
   background-color: white;
-  background-position: 0 50%;
-  padding-left: 18px;
+  background-position: 4px 50%;
+  padding-left: 24px;
 }
 
 .clear:after {
