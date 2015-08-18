@@ -66,9 +66,13 @@ a {
   }
   &.collapsible {
     padding-left: 1em;
-    background: url(../images/arrow_expanded.png) no-repeat -3px 40%;
+    @extend .icon;
+    @extend .fa-caret-down;
+    &:before {
+      min-width: 0.6em;
+    }
     &.collapsed {
-      background: url(../images/arrow_collapsed.png) no-repeat -5px 40%;
+      @extend .fa-caret-right;
     }
   }
 }
@@ -582,7 +586,7 @@ input[type="submit"] {
       display: inline-block;
       width: 100%;
       border-radius: 4px;
-      padding: 4px;
+      padding: 3px;
       color: $grey;
       margin-bottom: 0;
       &:hover {
@@ -600,6 +604,11 @@ input[type="submit"] {
     }
     .icon-time {
       font-size: 1.2em;
+    }
+
+    ul#completed-versions {
+      margin-left: 2em;
+      margin-top: -8px;
     }
   }
   #content {
@@ -1404,6 +1413,7 @@ fieldset.collapsible {
     &:before {
       @extend .fa;
       margin-right: 0.5em;
+      min-width: 0.6em;
     }
   }
 
