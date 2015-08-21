@@ -5,6 +5,24 @@ a#stealth_toggle {
   @extend .fa-eye-slash;
 }
 
+
+/*
+ * Issue templates
+ */
+.template_box {
+  border-radius: 4px;
+}
+
+a.template {
+  @extend .icon;
+  @extend .fa-th-list;
+  padding-left: 5px;
+}
+
+h2.template {
+  background: none !important;
+}
+
 /*
  * Plugins from redminecrm.com
  */
