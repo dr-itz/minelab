@@ -935,7 +935,11 @@ tr.message {
 
 
 tr.version.shared td.name {
-  background: url(../images/link.png) no-repeat 0 70%;
+  @extend .icon;
+  @extend .fa-share-alt;
+  &:before {
+    margin-left: -20px;
+  }
 }
 
 tr.user td {
@@ -3210,7 +3214,7 @@ div#version-summary td.total-hours {
 tr.message td.subject,
 tr.version td.name,
 fieldset#notified_events .parent {
-  padding-left: 20px;
+  padding-left: 26px;
 }
 
 td.hours .hours-dec,
