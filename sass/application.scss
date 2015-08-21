@@ -913,6 +913,11 @@ table.files tr.file td.filename {
 table.members td.roles,
 table.memberships td.roles {
   width: 45%;
+
+  & > form > p {
+    margin-top: 2px;
+	margin-bottom: 5px;
+  }
 }
 
 tr.message {
