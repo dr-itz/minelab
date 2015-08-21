@@ -65,14 +65,14 @@ a {
     text-decoration: line-through;
   }
   &.collapsible {
-    padding-left: 1em;
+    padding-left: 5px;
     @extend .icon;
-    @extend .fa-caret-down;
+    @extend .fa-minus-circle;
     &:before {
       min-width: 0.6em;
     }
     &.collapsed {
-      @extend .fa-caret-right;
+      @extend .fa-plus-circle;
     }
   }
 }
@@ -607,7 +607,7 @@ input[type="submit"] {
     }
 
     ul#completed-versions {
-      margin-left: 2em;
+      margin-left: 1.5em;
       margin-top: -8px;
     }
   }
