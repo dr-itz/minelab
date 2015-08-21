@@ -172,7 +172,7 @@ input[type="submit"] {
   padding: 0 10px;
   cursor: default;
   position: relative;
-  z-index: 999;
+  z-index: 99;
   height: 2em;
   ul.menu-children {
     width: 26em;
@@ -1265,7 +1265,7 @@ select {
 fieldset,
 fieldset.box {
   border: 0;
-  padding-top: 3em;
+  padding-top: 2.5em;
   position: relative;
   background: none;
   margin-bottom: 1em;
@@ -3498,6 +3498,17 @@ span {
 
 .ui-autocomplete {
   z-index: 1000;
+}
+
+.objects-selection {
+  overflow-y: auto;
+  max-height: 300px;
+  margin-top: 5px;
+}
+.objects-selection label,
+.roles-selection label {
+  width: 18em;
+  float: left;
 }
 
 // Import plugin specifics as last step so that definitions could override stuff here
