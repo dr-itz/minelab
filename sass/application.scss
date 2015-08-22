@@ -1412,7 +1412,7 @@ p.footnote {
 
 fieldset.collapsible {
   > legend {
-    @extend .fa-caret-down;
+    @extend .fa-minus-circle;
     cursor: pointer;
 
     &:before {
@@ -1425,7 +1425,7 @@ fieldset.collapsible {
   &.collapsed {
     padding-top: 1em;
     > legend {
-      @extend .fa-caret-right;
+      @extend .fa-plus-circle;
     }
   }
 }
