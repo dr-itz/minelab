@@ -125,29 +125,36 @@ select {
   text-align: center;
   font-size: 1em;
   height: 34px;
-  + a {
-    @extend .button;
-    font-size: 1em;
-    padding-top: 8px;
-  }
   &:hover {
     background-color: $dark-blue-green;
   }
 }
 
-#issue-form input[type="submit"] + a + a {
-  @extend .button;
-  font-size: 1em;
-  padding-top: 8px;
-  color: #333;
-  background-color: white;
-  border-color: #ccc;
-  &:hover {
-    background-color: #e6e6e6;
-    border-color: #adadad;
+#issue-form input[type="submit"],
+#message-form input[type="submit"],
+#wiki_form input[type="submit"],
+#news-form input[type="submit"],
+#new_document input[type="submit"] {
+  & + a {
+    @extend .button;
+    font-size: 1em;
+    padding-top: 8px;
+  }
+  & + a + a {
+    @extend .button;
+    font-size: 1em;
+    padding-top: 8px;
+    color: #333;
+    background-color: white;
+    border-color: #ccc;
+    &:hover {
+      background-color: #e6e6e6;
+      border-color: #adadad;
+    }
   }
 }
 
+%submit,
 input[type="submit"] {
   background-color: #446E9B;
   border-color: #3C6189;
@@ -586,7 +593,7 @@ input[type="submit"] {
       display: inline-block;
       width: 100%;
       border-radius: 4px;
-      padding: 3px;
+      padding: 3px 0;
       color: $grey;
       margin-bottom: 0;
       &:hover {
@@ -1097,9 +1104,10 @@ table.query-columns {
     vertical-align: middle;
     text-align: center;
 
-    input[type=button] {
+    input[type="button"] {
       width: 34px;
       padding: 0;
+      margin: 1px 0;
     }
   }
 }
@@ -1443,6 +1451,18 @@ div#query_form_with_buttons {
   }
 }
 
+p.buttons {
+  a {
+    @extend .button;
+    height: 27px;
+    padding: 0px 14px;
+    line-height: 2em;
+    &.icon-checked {
+      @extend %submit;
+    }
+  }
+}
+
 fieldset#filters  {
   table {
     border-collapse: collapse;
@@ -1496,12 +1516,7 @@ table#filters-table {
   margin-bottom: 1.4em;
   margin-top: 1em;
   a:before {
-    vertical-align: middle;
-    display: inline-block;
     margin-right: 0.5em;
-  }
-  a + a:before {
-    margin-left: 1em;
   }
 }
 
