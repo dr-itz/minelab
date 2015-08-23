@@ -1078,16 +1078,21 @@ table p {
 }
 
 a.sort {
-  padding-right: 16px;
-  background-position: 100% 50%;
-  background-repeat: no-repeat;
-
+  &:after {
+    @extend .fa;
+    font-size: 1.2em;
+    margin-left: 5px;
+  }
   &.asc {
-    background-image: url(../images/sort_asc.png);
+    &:after {
+      @extend .fa-caret-up:before;
+    }
   }
 
   &.desc {
-    background-image: url(../images/sort_desc.png);
+    &:after {
+      @extend .fa-caret-down:before;
+    }
   }
 }
 
