@@ -1420,6 +1420,7 @@ p.footnote {
 
 
 fieldset.collapsible {
+  margin-bottom: 5px;
   > legend {
     @extend .fa-minus-circle;
     cursor: pointer;
@@ -1435,6 +1436,7 @@ fieldset.collapsible {
     padding-top: 1em;
     > legend {
       @extend .fa-plus-circle;
+      border-bottom: none;
     }
   }
 }
@@ -1446,6 +1448,9 @@ fieldset#date-range p {
 div#query_form_with_buttons {
   padding: 10px;
   margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f5f5f5;
 
   .buttons {
     margin-bottom: 0;
@@ -1515,7 +1520,7 @@ table#filters-table {
 
 .buttons {
   margin-bottom: 1.4em;
-  margin-top: 1em;
+  margin-top: 5px;
   a:before {
     margin-right: 0.5em;
   }
