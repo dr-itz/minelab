@@ -2368,6 +2368,7 @@ table.progress {
   margin: 1px 6px 1px 0;
 
   td {
+    border-bottom: none;
     &.closed {
       background: #019875 none repeat scroll 0;
     }
