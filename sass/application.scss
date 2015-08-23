@@ -818,6 +818,9 @@ table {
         white-space: nowrap;
         text-align: center;
       }
+      &.done_ratio {
+        width: 5%;
+      }
     }
     caption {
       text-align: left;
@@ -1057,7 +1060,7 @@ table.list tbody {
     }
 
     &:hover {
-      background-color: rgba($orange, 0.1);
+      background-color: #FFFAF1;
     }
   }
 }
@@ -2366,10 +2369,10 @@ table.progress {
 
   td {
     &.closed {
-      background: #bae0ba none repeat scroll 0;
+      background: #019875 none repeat scroll 0;
     }
     &.done {
-      background: #d3edd3 none repeat scroll 0;
+      background: #bae0ba none repeat scroll 0;
     }
     &.todo {
       background: #eeeeee none repeat scroll 0;
