@@ -2031,14 +2031,9 @@ span.required {
 }
 
 a.remove-upload {
-  background: url(../images/delete.png) no-repeat 1px 50%;
-  width: 1px;
-  display: inline-block;
-  padding-left: 16px;
-
-  &:hover {
-    text-decoration: none !important;
-  }
+  @extend .icon-del;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 
 div.fileover {
