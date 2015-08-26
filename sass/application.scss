@@ -2376,7 +2376,8 @@ table.progress {
       background: #bae0ba none repeat scroll 0;
     }
     &.todo {
-      background: #eeeeee none repeat scroll 0;
+      background: #d0d0d0 none repeat scroll 0;
+      border-left: 2px solid #dfdfdf;
     }
   }
 }
