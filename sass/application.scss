@@ -657,7 +657,7 @@ input[type="submit"] {
         height: 2em;
       }
     }
-    h2:first-of-type {
+    > h2:first-of-type {
       font-weight: 400;
       border-bottom: 1px solid $medium-grey;
       margin: 0 0 0.8em;
