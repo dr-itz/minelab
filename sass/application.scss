@@ -703,8 +703,8 @@ input[type="submit"] {
   #admin-menu {
     li {
       border-radius: 4px;
+      padding: 3px 0;
       a {
-        display: inline-block;
         width: 100%;
       }
       &:hover {
