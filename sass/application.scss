@@ -1076,6 +1076,9 @@ table p {
 .even {
   background-color: $white;
 }
+.odd {
+  background-color: #fff;
+}
 
 a.sort {
   &:after {
