@@ -1,0 +1,168 @@
+table.revision-info td {
+  margin:  0px;
+  padding: 0px;
+}
+
+div.revision-graph {
+  position: absolute;
+  min-width: 1px;
+}
+
+div.changeset-changes ul {
+  margin: 0;
+  padding: 0;
+  & > ul {
+    margin-left: 18px;
+    padding: 0;
+  }
+}
+
+#changes-legend {
+  float: right;
+  font-size: 0.8em;
+  margin: 0;
+  li {
+    float: left;
+    background-position: 5px -2px;
+  }
+}
+
+li.change {
+  list-style-type:none;
+  background-image: url(../images/bullet_black.png);
+  background-position: 1px 1px;
+  background-repeat: no-repeat;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  margin: 0;
+
+  &.folder {
+    background-image: url(../images/folder_open.png);
+    &.change-A { background-image: url(../images/folder_open_add.png); }
+    &.change-M { background-image: url(../images/folder_open_orange.png); }
+  }
+
+  &.change-A { background-image: url(../images/bullet_add.png); }
+  &.change-M { background-image: url(../images/bullet_orange.png); }
+  &.change-C { background-image: url(../images/bullet_blue.png); }
+  &.change-R { background-image: url(../images/bullet_purple.png); }
+  &.change-D { background-image: url(../images/bullet_delete.png); }
+
+  .copied-from {
+    font-style: italic;
+    color: #999;
+    font-size: 0.9em;
+    &:before {
+      content: " - ";
+    }
+  }
+}
+
+table.filecontent {
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  border-collapse: collapse;
+  background-color: #fafafa;
+
+  tbody {
+    font-family:Consolas, Menlo, "Liberation Mono", Courier, monospace;
+    font-size:12px;
+  }
+  th {
+    border: 1px solid #e2e2e2;
+    background-color: #eee;
+
+    &.filename {
+      background-color: #e4e4d4;
+      text-align: left;
+      padding:5px;
+    }
+    &.line-num {
+      border: 1px solid #e2e2e2;
+      text-align: right;
+      width: 2%;
+      padding: 0 3px 0 0;
+      color: #999;
+      user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      font-weight:normal;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+  tr.spacing {
+    th {
+      text-align:center;
+    }
+    td {
+      height: 0.4em;
+      background: #EAF2F5;
+    }
+  }
+  td.line-code {
+    padding: 0 0 0 4px;
+    pre {
+      margin: 0px;
+      white-space: pre-wrap;
+      font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
+      font-size:12px;
+    }
+  }
+  tr:target {
+    th.line-num {
+      background-color: #E0E0E0;
+      color: #777;
+    }
+    td.line-code {
+      background-color:#DDEEFF;
+    }
+  }
+}
+
+table.annotate {
+  /* 12 different colors for the annonate view */
+  tr.bloc-0  { background: #FFFFBF; }
+  tr.bloc-1  { background: #EABFFF; }
+  tr.bloc-2  { background: #BFFFFF; }
+  tr.bloc-3  { background: #FFD9BF; }
+  tr.bloc-4  { background: #E6FFBF; }
+  tr.bloc-5  { background: #BFCFFF; }
+  tr.bloc-6  { background: #FFBFEF; }
+  tr.bloc-7  { background: #FFE6BF; }
+  tr.bloc-8  { background: #FFE680; }
+  tr.bloc-9  { background: #AA80FF; }
+  tr.bloc-10 { background: #FFBFDC; }
+  tr.bloc-11 { background: #BFE4FF; }
+
+  td.revision {
+    padding:0;
+    text-align: center;
+    width: 2%;
+    padding-left: 1em;
+    background: inherit;
+  }
+  td.author {
+    padding:0;
+    text-align: center;
+    border-right: 1px solid #d7d7d7;
+    white-space: nowrap;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 3%;
+    background: inherit;
+  }
+  td.line-code {
+    background-color: #fafafa;
+  }
+}
+
+div.action_M { background: #fd8 }
+div.action_D { background: #f88 }
+div.action_A { background: #bfb }
