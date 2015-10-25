@@ -888,20 +888,17 @@ tr.entry {
 
 
 tr span.expander {
-  @extend .fa-plus-circle;
+  @extend .fa-plus-square;
   cursor: pointer;
   &:before {
     @extend .fa;
-    margin-right: 0.5em;
   }
 }
 
 tr.open span.expander {
-  @extend .fa-minus-circle;
-  cursor: pointer;
+  @extend .fa-minus-square;
   &:before {
     @extend .fa;
-    margin-right: 0.5em;
   }
 }
 
