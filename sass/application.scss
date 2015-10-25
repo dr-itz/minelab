@@ -66,12 +66,12 @@ a {
   &.collapsible {
     padding-left: 5px;
     @extend .icon;
-    @extend .fa-minus-circle;
+    @extend .fa-caret-down;
     &:before {
       min-width: 0.6em;
     }
     &.collapsed {
-      @extend .fa-plus-circle;
+      @extend .fa-caret-right;
     }
   }
 }
@@ -1447,7 +1447,7 @@ p.footnote {
 fieldset.collapsible {
   margin-bottom: 5px;
   > legend {
-    @extend .fa-minus-circle;
+    @extend .fa-caret-down;
     cursor: pointer;
 
     &:before {
@@ -1460,7 +1460,7 @@ fieldset.collapsible {
   &.collapsed {
     padding-top: 1em;
     > legend {
-      @extend .fa-plus-circle;
+      @extend .fa-caret-right;
       border-bottom: none;
     }
   }
