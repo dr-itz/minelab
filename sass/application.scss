@@ -460,6 +460,9 @@ input[type="submit"] {
         color: $blue;
         border-bottom: 3px solid $blue;
       }
+      &:active {
+        color: $grey;
+      }
     }
   }
 }
