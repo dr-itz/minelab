@@ -1669,10 +1669,10 @@ dt {
     margin-right: 0.5em;
   }
   &.project {
-    @extend .icon-projects;
+    @extend .fa-cubes;
   }
   &.issue {
-    @extend .icon-issue;
+    @extend .fa-square;
   }
   &.issue-edit {
     @extend .fa-pencil-square;
@@ -1703,10 +1703,10 @@ dt {
     @extend .fa-check-square;
   }
   &.attachment {
-    @extend .icon-attachment;
+    @extend .fa-paperclip;
   }
   &.time-entry {
-    @extend .icon-time;
+    @extend .fa-clock-o;
   }
 }
 
