@@ -1700,7 +1700,7 @@ dt {
   }
   &.issue-closed,
   &.issue.closed {
-    @extend .fa-ticket;
+    @extend .fa-check-square;
   }
   &.attachment {
     @extend .icon-attachment;
