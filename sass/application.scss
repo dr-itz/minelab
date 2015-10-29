@@ -3352,6 +3352,9 @@ div.journal {
     border-top: 1px solid #ccc;
 
     p {
+      margin: 0 0 10px;
+    }
+    p:last-child {
       margin: 0;
     }
   }
