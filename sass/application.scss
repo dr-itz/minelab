@@ -1098,16 +1098,6 @@ a.sort {
   }
 }
 
-table.attributes {
-  th {
-    vertical-align: top;
-    text-align: left;
-  }
-  td {
-    vertical-align: top;
-  }
-}
-
 table.boards a.board,
 h3.comments {
   @extend .fa-comments;
@@ -1362,6 +1352,30 @@ div.issue {
   }
   .attributes {
     margin-top: 2em;
+    /* Redmine < 3.2 */
+    th {
+      vertical-align: top;
+      text-align: left;
+      width: 22%;
+    }
+    td {
+      vertical-align: top;
+      width: 28%;
+    }
+
+    /* Redmine >= 3.2 */
+    .attribute {
+      padding-left: 180px;
+      clear: left;
+      min-height: 1.8em;
+
+      .label {
+        width: 170px;
+        margin-left: -180px;
+        font-weight: bold;
+        float: left;
+      }
+    }
   }
   .contextual {
     top: 0 !important;
@@ -1406,16 +1420,12 @@ div.issue {
     padding: 0 2px;
   }
 
-  table.attributes td {
-    width: 28%;
-  }
-
   img.gravatar {
     float: left;
     margin: 0 10px 0 0;
   }
 
-  table img.gravatar {
+  .attributes img.gravatar {
     height: 1em;
     width: 1em;
     float: left;
@@ -2369,9 +2379,11 @@ table.progress {
   text-align: center;
   float: left;
   margin: 1px 6px 1px 0;
+  width: 80px;
 
   td {
     border-bottom: none;
+    height: 1em;
     &.closed {
       background: #019875 none repeat scroll 0;
     }
@@ -2385,15 +2397,19 @@ table.progress {
   }
 }
 
+#roadmap table.progress {
+  width: 40em;
+  td {
+    height: 1.2em;
+  }
+}
+
+
 p.progress-info {
   clear: left;
   font-size: 80%;
   margin-top: -4px;
   color: #777777;
-}
-
-#roadmap table.progress td {
-  height: 1.2em;
 }
 
 #content .tabs {
@@ -2889,6 +2905,9 @@ td.username img.gravatar {
   .instance-variable {
     color: #3333bb;
   }
+  .imaginary {
+    color: red;
+  }
   .key {
     color: #660066;
     .char {
@@ -3082,11 +3101,6 @@ table.files tr.file td.digest,
 .conflict-details,
 p.percent {
   font-size: 80%;
-}
-
-* html #sidebar,
-div.issue table.attributes th {
-  width: 22%;
 }
 
 #main.nosidebar #sidebar,
@@ -3368,10 +3382,6 @@ div.journal {
   top: initial!important;
 }
 
-table.progress td {
-  height: 1em;
-}
-
 div#activity dd .description,
 #search-results dd .description,
 ul.properties li span,
@@ -3452,8 +3462,8 @@ textarea.text_cf {
 .version-overdue a,
 .issue-overdue a,
 .project-overdue a,
-.syntaxhl .imaginary {
-  color: red;
+.issue.overdue .due-date .value {
+  color: #c22;
 }
 
 #block-form {
