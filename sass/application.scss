@@ -774,12 +774,54 @@ table {
   text-align: left;
   color: $grey;
   border: 0;
+  td {
+    padding: 4px;
+  }
+  p {
+    margin: 0;
+  }
   &.list {
     font-size: 12px;
     border: 0;
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 0.5em;
+    tbody tr {
+      &.group {
+        td {
+          font-weight: 700;
+          border-bottom: 1px solid $medium-grey;
+          text-align: left;
+          padding: 0.8em 0 0.5em 0.3em;
+        }
+
+        span.count {
+          position: relative;
+          color: white;
+          background: $green;
+          border-radius: 4px;
+          margin-left: 0.5em;
+          padding: 0.2em 0.5em;
+          font-size: 0.85em;
+          display: inline-block;
+        }
+
+        a.toggle-all {
+          font-weight: 400;
+          display: none;
+          margin-left: 0.5em;
+          font-size: 0.85em;
+        }
+
+        &:hover {
+          background-color: inherit;
+        }
+      }
+
+      &:hover {
+        background-color: #FFFAF1;
+      }
+    }
     th {
       background: none;
       white-space: nowrap;
@@ -806,6 +848,9 @@ table {
       &.checkbox {
         width: 15px;
         padding: 2px 0 0;
+        input {
+          padding: 0;
+        }
       }
       &.buttons {
         width: 15%;
@@ -1023,53 +1068,6 @@ a#check-for-updates {
     @extend .fa;
     margin-right: 5px;
   }
-}
-
-table.list tbody {
-  tr {
-    &.group {
-      td {
-        font-weight: 700;
-        border-bottom: 1px solid $medium-grey;
-        text-align: left;
-        padding: 0.8em 0 0.5em 0.3em;
-      }
-
-      span.count {
-        position: relative;
-        color: white;
-        background: $green;
-        border-radius: 4px;
-        margin-left: 0.5em;
-        padding: 0.2em 0.5em;
-        font-size: 0.85em;
-        display: inline-block;
-      }
-
-      a.toggle-all {
-        font-weight: 400;
-        display: none;
-        margin-left: 0.5em;
-        font-size: 0.85em;
-      }
-
-      &:hover {
-        background-color: inherit;
-      }
-    }
-
-    &:hover {
-      background-color: #FFFAF1;
-    }
-  }
-}
-
-table td {
-  padding: 4px;
-}
-
-table p {
-  margin: 0;
 }
 
 .even {
@@ -3156,7 +3154,6 @@ a.toggle-all:hover {
   text-decoration: none;
 }
 
-table.list td.checkbox input,
 #relations td.buttons {
   padding: 0;
 }
