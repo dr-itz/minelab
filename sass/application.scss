@@ -2404,6 +2404,11 @@ table.progress {
   }
 }
 
+p.percent {
+  font-size: 80%;
+  margin: 0;
+  padding: 2px;
+}
 
 p.progress-info {
   clear: left;
@@ -3098,8 +3103,7 @@ div#search-results-counts,
 
 #header h1 a.ancestor,
 table.files tr.file td.digest,
-.conflict-details,
-p.percent {
+.conflict-details {
   font-size: 80%;
 }
 
